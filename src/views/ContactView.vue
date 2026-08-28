@@ -1,0 +1,11 @@
+<template>
+    <div class="">
+        <h1>contact</h1>
+    </div>
+    
+    </template>
+
+
+<script setup>
+
+</script>

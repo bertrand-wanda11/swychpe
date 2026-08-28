@@ -14,15 +14,15 @@
     <!-- Desktop Nav Links -->
     <nav class="nav-links desktop-only">
       <a href="/card">Cards</a>
-      <a href="#offers">Offers</a>
-      <a href="#partners">Partners</a>
-      <a href="#contact">Contact us</a>
+      <a href="/offer">Offers</a>
+      <a href="/partner">Partners</a>
+      <a href="/contact">Contact us</a>
     </nav>
   </div>
 
   <!-- Desktop Right Section -->
   <div class="nav-right desktop-only">
-    <a href="#pricing" class="pricing-link">
+    <a href="/finance" class="pricing-link">
       <span class="pricing-icon">💳</span> Finance & Savings
     </a>
     <a href="#get-app" class="btn-get-app">Get the App</a>
@@ -59,11 +59,11 @@
 
   <!-- Drawer Links -->
   <nav class="mobile-nav-links">
-    <a href="#cards" @click="closeMobileMenu">Cards</a>
-    <a href="#offers" @click="closeMobileMenu">Offers</a>
-    <a href="#partners" @click="closeMobileMenu">Partners</a>
-    <a href="#contact" @click="closeMobileMenu">Contact us</a>
-    <a href="#pricing" class="mobile-pricing-link" @click="closeMobileMenu">
+    <a href="/card" @click="closeMobileMenu">Cards</a>
+    <a href="/offer" @click="closeMobileMenu">Offers</a>
+    <a href="/partner" @click="closeMobileMenu">Partners</a>
+    <a href="/contact" @click="closeMobileMenu">Contact us</a>
+    <a href="/finance" class="mobile-pricing-link" @click="closeMobileMenu">
       💳 Finance & Savings
     </a>
     <a href="#get-app" class="btn-mobile-get-app" @click="closeMobileMenu">

@@ -19,13 +19,33 @@ const router = createRouter({
       name: 'card',
       component: () => import('../views/CardView.vue'),
     },
-
       {
       path: '/request',
       name: 'request',
       component: () => import('../views/RequestView.vue'),
     },
-    
+        {
+      path: '/offer',
+      name: 'offer',
+      component: () => import('../views/OfferView.vue'),
+    },
+         {
+      path: '/partner',
+      name: 'partner',
+      component: () => import('../views/PartnerView.vue'),
+    },
+          {
+      path: '/contact',
+      name: 'contact',
+      component: () => import('../views/ContactView.vue'),
+    },
+          {
+      path: '/finance',
+      name: 'finance',
+      component: () => import('../views/FinanceView.vue'),
+    },
+
+
 
   ],
 })

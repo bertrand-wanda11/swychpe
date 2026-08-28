@@ -9,7 +9,7 @@
     <div class="footer-contact-banner">
       <div class="contact-text-col">
         <h2 class="contact-title">Have questions? We're here to help</h2>
-        <p class="contact-subtitle">Get in touch with the Swychr support team anytime</p>
+        <p class="contact-subtitle">Get in touch with the SwychPe support team anytime</p>
       </div>
 
       <div class="contact-buttons-col">
