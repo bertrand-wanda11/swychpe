@@ -146,7 +146,7 @@
               <!-- Action Buttons Row -->
               <div class="card-tile-actions">
               <router-link 
-  :to="{ path: '/request-card', query: { card: card.title } }" 
+  :to="{ path: '/request', query: { card: card.title } }" 
   class="btn-apply-now"
 >
   Apply Now
