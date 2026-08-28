@@ -186,63 +186,63 @@ const allOffers = ref([
     category: 'debit',
     partnerName: 'DRAGONPASS',
     title: 'Platinum Airport Lounge Access',
-    link: '/request-card'
+    link: '/learn'
   },
   {
     id: 2,
     category: 'debit',
     partnerName: 'DRAGONPASS',
     title: 'World Airport Lounge Access',
-    link: '/request-card'
+    link: '/learn'
   },
   {
     id: 3,
     category: 'debit',
     partnerName: 'IHG HOTELS & RESORTS',
     title: 'Exclusive IHG Stay Rewards & Discounts',
-    link: '/request-card'
+    link: '/learn'
   },
   {
     id: 4,
     category: 'prepaid',
     partnerName: 'amazon prime',
     title: 'Complimentary Amazon Prime Membership (Prepaid)',
-    link: '/request-card'
+    link: '/learn'
   },
   {
     id: 5,
     category: 'debit',
     partnerName: 'amazon prime',
     title: 'Complementary 6 Months Amazon Prime Membership',
-    link: '/request-card'
+    link: '/learn'
   },
   {
     id: 6,
     category: 'debit',
     partnerName: 'COSTA',
     title: 'Complimentary Costa Food and Drink at Dubai Airports',
-    link: '/request-card'
+    link: '/learn'
   },
   {
     id: 7,
     category: 'prepaid', // also available for debit
     partnerName: 'Rentalcars.com',
     title: 'Rentalcars.com 10% Off Your Booking',
-    link: '/request-card'
+    link: '/learn'
   },
   {
     id: 8,
     category: 'prepaid',
     partnerName: 'Trip.com',
     title: 'Trip.com - Get 10% Off Flights and Hotels',
-    link: '/request-card'
+    link: '/learn'
   },
   {
     id: 9,
     category: 'debit',
     partnerName: 'Trip.com',
     title: 'Trip.com - Get 15% Off Flights and Hotels',
-    link: '/request-card'
+    link: '/learn'
   }
 ])
 

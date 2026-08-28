@@ -45,6 +45,13 @@ const router = createRouter({
       component: () => import('../views/FinanceView.vue'),
     },
 
+           {
+      path: '/learn',
+      name: 'learn',
+      component: () => import('../views/LearnView.vue'),
+    },
+
+
 
 
   ],
