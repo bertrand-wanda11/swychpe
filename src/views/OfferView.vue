@@ -1,8 +1,10 @@
 <template>
+    <div class="">
+       <Navbar />
   <section class="offers-hero">
     <div class="offers-hero-container">
       
-      <!-- Left Hero Content Column -->
+ 
       <div class="offers-text-column">
         <h1 class="offers-title">SwychPe Offers</h1>
         
@@ -15,7 +17,7 @@
           Experience tailored benefits designed to enrich every transaction.
         </p>
 
-        <router-link to="/request-card" class="btn-offers-apply">
+        <router-link to="/card" class="btn-offers-apply">
           Apply now
         </router-link>
 
@@ -157,11 +159,15 @@
     </div>
   </section>
 
+  <Footer />  
+</div>
 </template>
 
 
 <script setup>
 import { ref, computed } from 'vue'
+import Navbar from '@/components/Navbar.vue';
+import Footer from '@/components/Footer.vue';
 
 const currentTab = ref('all')
 const currentPage = ref(1)
@@ -178,64 +184,64 @@ const allOffers = ref([
   {
     id: 1,
     category: 'debit',
-    partnerName: 'SwychPe VIP Lounge',
-    title: 'Platinum Airport VIP Lounge Access',
+    partnerName: 'DRAGONPASS',
+    title: 'Platinum Airport Lounge Access',
     link: '/request-card'
   },
   {
     id: 2,
     category: 'debit',
-    partnerName: 'SwychPe World Pass',
-    title: 'Global Airport Lounge Priority Entry',
+    partnerName: 'DRAGONPASS',
+    title: 'World Airport Lounge Access',
     link: '/request-card'
   },
   {
     id: 3,
     category: 'debit',
-    partnerName: 'IHG Hotels & Resorts',
+    partnerName: 'IHG HOTELS & RESORTS',
     title: 'Exclusive IHG Stay Rewards & Discounts',
     link: '/request-card'
   },
   {
     id: 4,
     category: 'prepaid',
-    partnerName: 'Amazon Prime',
+    partnerName: 'amazon prime',
     title: 'Complimentary Amazon Prime Membership (Prepaid)',
     link: '/request-card'
   },
   {
     id: 5,
     category: 'debit',
-    partnerName: 'Amazon Prime',
-    title: '6 Months Free Amazon Prime Streaming',
+    partnerName: 'amazon prime',
+    title: 'Complementary 6 Months Amazon Prime Membership',
     link: '/request-card'
   },
   {
     id: 6,
     category: 'debit',
-    partnerName: 'Dubai Duty Free Dining',
-    title: 'Complimentary Food & Drink Perks at Airports',
+    partnerName: 'COSTA',
+    title: 'Complimentary Costa Food and Drink at Dubai Airports',
     link: '/request-card'
   },
   {
     id: 7,
-    category: 'prepaid',
+    category: 'prepaid', // also available for debit
     partnerName: 'Rentalcars.com',
-    title: 'Save 10% On Global Vehicle Rentals',
+    title: 'Rentalcars.com 10% Off Your Booking',
     link: '/request-card'
   },
   {
     id: 8,
-    category: 'debit',
-    partnerName: 'Trip.com Rewards',
-    title: 'Enjoy 10% Discount on Flights & Hotels',
+    category: 'prepaid',
+    partnerName: 'Trip.com',
+    title: 'Trip.com - Get 10% Off Flights and Hotels',
     link: '/request-card'
   },
   {
     id: 9,
     category: 'debit',
-    partnerName: 'Trip.com Premium',
-    title: 'Up to 15% Cashback on International Travel',
+    partnerName: 'Trip.com',
+    title: 'Trip.com - Get 15% Off Flights and Hotels',
     link: '/request-card'
   }
 ])
