@@ -846,7 +846,9 @@ const doubledRow2 = computed(() => [...row2Partners, ...row2Partners, ...row2Par
     border-radius: 24px;
   }
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
+/* Main Light Background Section */
 .partners-logos-section {
   width: 100%;
   background-color: #f3ecf9;
@@ -865,7 +867,7 @@ const doubledRow2 = computed(() => [...row2Partners, ...row2Partners, ...row2Par
   align-items: center;
 }
 
-/* Centered Section Heading */
+/* Heading */
 .section-heading {
   font-size: 2.4rem;
   font-weight: 800;
@@ -875,7 +877,7 @@ const doubledRow2 = computed(() => [...row2Partners, ...row2Partners, ...row2Par
   letter-spacing: -0.5px;
 }
 
-/* Marquee Ticker Container */
+/* Marquee Wrapper */
 .ticker-wrapper {
   width: 100%;
   display: flex;
@@ -884,7 +886,7 @@ const doubledRow2 = computed(() => [...row2Partners, ...row2Partners, ...row2Par
   position: relative;
 }
 
-/* Side Fade Gradients for Smooth In/Out Effect */
+/* Side Gradients for Smooth In/Out Fading */
 .ticker-wrapper::before,
 .ticker-wrapper::after {
   content: '';
@@ -906,7 +908,6 @@ const doubledRow2 = computed(() => [...row2Partners, ...row2Partners, ...row2Par
   background: linear-gradient(to left, #f3ecf9 0%, rgba(243, 236, 249, 0) 100%);
 }
 
-/* Ticker Row Setup */
 .ticker-row {
   display: flex;
   overflow: hidden;
@@ -920,7 +921,6 @@ const doubledRow2 = computed(() => [...row2Partners, ...row2Partners, ...row2Par
   width: max-content;
 }
 
-/* Animations */
 .ticker-left .ticker-track {
   animation: scrollLeft 35s linear infinite;
 }
@@ -933,64 +933,76 @@ const doubledRow2 = computed(() => [...row2Partners, ...row2Partners, ...row2Par
   animation-play-state: paused;
 }
 
+/* ==========================================================================
+   SWYCHR BRAND FLOATING CARD CONTAINERS & HIGH-CONTRAST ICONS
+   ========================================================================== */
+.partner-logo-card {
+  background: linear-gradient(160deg, #2b083e 0%, #150324 100%) !important;
+  border-radius: 20px;
+  padding: 0.8rem 1.4rem;
+  min-width: 160px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(123, 31, 162, 0.4);
+  box-shadow: 0 10px 25px rgba(21, 3, 36, 0.25);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
 
-
+.partner-logo-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  border-color: #E1BEE7;
+  box-shadow: 0 15px 30px rgba(123, 31, 162, 0.35);
+}
 
 .logo-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.4rem;
+  gap: 0.35rem;
   width: 100%;
 }
 
-/* Bright contrast white/lilac icon styling */
+/* Bright Lilac/White High-Contrast Icon Styling */
 .partner-svg-icon {
-  width: 28px;
-  height: 28px;
-  min-width: 28px;
-  min-height: 28px;
-  color: #ffffff !important; /* Forces bright white visibility */
-  fill: currentColor;
-  filter: drop-shadow(0 2px 4px rgba(225, 190, 231, 0.4)); /* Subtle glowing pop */
+  width: 26px !important;
+  height: 26px !important;
+  min-width: 26px;
+  min-height: 26px;
+  color: #E1BEE7 !important; /* Swychr Accent Lilac */
+  fill: currentColor !important;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .partner-logo-card:hover .partner-svg-icon {
-  color: #E1BEE7 !important;
+  color: #ffffff !important;
   transform: scale(1.15);
 }
 
 .logo-brand-name {
   font-size: 0.85rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #ffffff !important;
   letter-spacing: -0.2px;
   white-space: nowrap;
 }
 
+/* Animation Keyframes */
 @keyframes scrollLeft {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-33.333%);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
 }
 
 @keyframes scrollRight {
-  0% {
-    transform: translateX(-33.333%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+  0% { transform: translateX(-33.333%); }
+  100% { transform: translateX(0); }
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN (DESKTOP, TABLET, MOBILE)
-   ========================================================================== */
+/* Responsive Media Queries */
 @media (max-width: 992px) {
   .section-heading {
     font-size: 2rem;
@@ -999,12 +1011,17 @@ const doubledRow2 = computed(() => [...row2Partners, ...row2Partners, ...row2Par
 
   .partner-logo-card {
     min-width: 140px;
-    height: 65px;
-    padding: 0.75rem 1.4rem;
+    height: 70px;
+    padding: 0.6rem 1rem;
+  }
+
+  .partner-svg-icon {
+    width: 22px !important;
+    height: 22px !important;
   }
 
   .logo-brand-name {
-    font-size: 0.88rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -1018,20 +1035,20 @@ const doubledRow2 = computed(() => [...row2Partners, ...row2Partners, ...row2Par
     margin-bottom: 2rem;
   }
 
-  .ticker-wrapper::before,
-  .ticker-wrapper::after {
-    width: 50px;
-  }
-
   .partner-logo-card {
     min-width: 120px;
-    height: 58px;
-    padding: 0.6rem 1rem;
+    height: 64px;
+    padding: 0.5rem 0.85rem;
     border-radius: 16px;
   }
 
+  .partner-svg-icon {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
   .logo-brand-name {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }
 </style>
