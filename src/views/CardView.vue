@@ -932,12 +932,14 @@ const openCompareModal = () => {
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.25s ease;
+  text-decoration: none;
 }
 
 .btn-apply-now:hover {
   background-color: #ffffff;
   color: #7B1FA2;
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+  text-decoration: none;
 }
 
 .link-learn-more {
