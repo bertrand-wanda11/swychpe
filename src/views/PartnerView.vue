@@ -933,44 +933,43 @@ const doubledRow2 = computed(() => [...row2Partners, ...row2Partners, ...row2Par
   animation-play-state: paused;
 }
 
-/* Individual Partner Card Badge */
-.partner-logo-card {
-  background: linear-gradient(160deg, #2b083e 0%, #150324 100%);
-  border-radius: 20px;
-  padding: 0.85rem 1.8rem;
-  min-width: 160px;
-  height: 75px;
+
+
+
+.logo-box {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(123, 31, 162, 0.3);
-  box-shadow: 0 10px 25px rgba(21, 3, 36, 0.15);
-  transition: all 0.3s ease;
-  cursor: pointer;
+  gap: 0.4rem;
+  width: 100%;
 }
 
-.partner-logo-card:hover {
-  transform: translateY(-4px) scale(1.03);
-  border-color: #E1BEE7;
-  box-shadow: 0 15px 30px rgba(123, 31, 162, 0.25);
+/* Bright contrast white/lilac icon styling */
+.partner-svg-icon {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  min-height: 28px;
+  color: #ffffff !important; /* Forces bright white visibility */
+  fill: currentColor;
+  filter: drop-shadow(0 2px 4px rgba(225, 190, 231, 0.4)); /* Subtle glowing pop */
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.logo-icon-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.partner-logo-card:hover .partner-svg-icon {
+  color: #E1BEE7 !important;
+  transform: scale(1.15);
 }
 
 .logo-brand-name {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 700;
   color: #ffffff;
   letter-spacing: -0.2px;
-  text-align: center;
   white-space: nowrap;
 }
 
-/* CSS Keyframes for Infinite Scroll */
 @keyframes scrollLeft {
   0% {
     transform: translateX(0);
