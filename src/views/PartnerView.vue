@@ -1882,7 +1882,6 @@ const handleSubmit = () => {
     grid-template-columns: 1fr;
     gap: 1.25rem;
   }
-
   .support-card,
   .support-card-wide {
     padding: 2rem 1.25rem;
