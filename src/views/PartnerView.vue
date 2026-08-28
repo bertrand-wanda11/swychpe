@@ -202,7 +202,9 @@
               :key="'r1-' + index" 
               class="partner-logo-card"
             >
-              <div class="logo-icon-box">
+              <div class="logo-box">
+                <!-- Inline SVG Brand Icon -->
+                <svg class="partner-svg-icon" viewBox="0 0 24 24" fill="currentColor" v-html="partner.icon"></svg>
                 <span class="logo-brand-name">{{ partner.name }}</span>
               </div>
             </div>
@@ -217,7 +219,9 @@
               :key="'r2-' + index" 
               class="partner-logo-card"
             >
-              <div class="logo-icon-box">
+              <div class="logo-box">
+                <!-- Inline SVG Brand Icon -->
+                <svg class="partner-svg-icon" viewBox="0 0 24 24" fill="currentColor" v-html="partner.icon"></svg>
                 <span class="logo-brand-name">{{ partner.name }}</span>
               </div>
             </div>
@@ -238,32 +242,86 @@
 import { computed } from 'vue'
 import Navbar from '@/components/Navbar.vue';
 import Footer from '@/components/Footer.vue';
-
 const row1Partners = [
-  { name: 'Anghami' },
-  { name: 'Huawei' },
-  { name: 'Nahdi' },
-  { name: 'Jawaker' },
-  { name: 'Lebara' },
-  { name: 'Mobily' },
-  { name: 'STC' },
-  { name: 'Nintendo Switch' },
-  { name: 'Amazon' }
+  { 
+    name: 'Anghami', 
+    icon: '<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/>' 
+  },
+  { 
+    name: 'Huawei', 
+    icon: '<path d="M12 3l2.5 5.5L20 9l-4 4.5 1 6-5-3-5 3 1-6-4-4.5 5.5-.5L12 3z"/>' 
+  },
+  { 
+    name: 'Nahdi', 
+    icon: '<path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>' 
+  },
+  { 
+    name: 'Jawaker', 
+    icon: '<path d="M12 2L9 9H2l6 4.5L5.5 21 12 16.5 18.5 21 16 13.5 22 9h-7L12 2z"/>' 
+  },
+  { 
+    name: 'Lebara', 
+    icon: '<path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 14a4 4 0 110-8 4 4 0 010 8z"/>' 
+  },
+  { 
+    name: 'Mobily', 
+    icon: '<path d="M4 4h16v4H4V4zm0 6h16v4H4v-4zm0 6h16v4H4v-4z"/>' 
+  },
+  { 
+    name: 'STC', 
+    icon: '<path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>' 
+  },
+  { 
+    name: 'Nintendo', 
+    icon: '<path d="M6 3h12c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3H6c-1.7 0-3-1.3-3-3V6c0-1.7 1.3-3 3-3zm2 4.5a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm8 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>' 
+  },
+  { 
+    name: 'Amazon', 
+    icon: '<path d="M15.9 19c-3.2 2.3-7.8 2.5-11.4.3-1.1-.7-2-1.7-2.7-2.8-.2-.3 0-.6.3-.5 3.7 1.6 8.1 1.7 12 .3.4-.1.7.3.3.6zM17.4 16.5c-.3-.4-1.8-.2-2.5-.1-.2 0-.3-.2-.1-.3 1-1 2.9-.7 3.2-.3.3.4 0 2.3-.9 3.1-.2.2-.4.1-.3-.1.4-.7.9-2 .6-2.3z"/>' 
+  }
 ]
 
+// Row 2 Partners with inline SVG paths
 const row2Partners = [
-  { name: 'Roblox' },
-  { name: 'PlayStation' },
-  { name: 'Zain' },
-  { name: 'Shahid VIP' },
-  { name: 'Spotify' },
-  { name: 'StarzPlay' },
-  { name: 'Steam' },
-  { name: 'Uber' },
-  { name: 'Razer Gold' }
+  { 
+    name: 'Roblox', 
+    icon: '<path d="M5.2 2L2 18.8 18.8 22 22 5.2 5.2 2zm8.3 11.3l-3-1.8 1.8-3 3 1.8-1.8 3z"/>' 
+  },
+  { 
+    name: 'PlayStation', 
+    icon: '<path d="M8.4 14.8c1.7.5 3.6.4 5.2-.4V8.7L11 7.6v5.8l-2.6-1.1v2.5zm12.3.9c-.3-.4-1-.7-2-.8l-4-.3V12l4 .4c1.1.1 1.9.4 2.1 1.1.3.8-.4 1.6-1.8 2.1-1.4.5-3.3.6-4.6.3v-1.6c1.1.2 2.6.1 3.7-.3.7-.2 1-.5.9-.8z"/>' 
+  },
+  { 
+    name: 'Zain', 
+    icon: '<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>' 
+  },
+  { 
+    name: 'Shahid VIP', 
+    icon: '<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>' 
+  },
+  { 
+    name: 'Spotify', 
+    icon: '<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.59 14.42c-.18.3-.54.4-.84.22-2.31-1.41-5.22-1.73-8.65-.95-.34.08-.67-.14-.75-.48-.08-.34.14-.67.48-.75 3.77-.86 7-.49 9.54 1.07.3.17.4.53.22.89zm1.23-2.73c-.23.37-.7.49-1.07.26-2.64-1.62-6.67-2.09-9.79-1.14-.41.13-.85-.1-.98-.51-.13-.41.1-.85.51-.98 3.57-1.09 8.01-.57 11.07 1.3.37.23.49.7.26 1.07zm.11-2.84C14.78 8.9 9.03 8.7 5.67 9.72c-.52.16-1.07-.14-1.23-.66-.16-.52.14-1.07.66-1.23 3.86-1.17 10.21-.93 14.1 1.38.47.28.62.89.34 1.36-.28.47-.89.62-1.36.34z"/>' 
+  },
+  { 
+    name: 'StarzPlay', 
+    icon: '<path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>' 
+  },
+  { 
+    name: 'Steam', 
+    icon: '<path d="M12 2a10 10 0 00-9.93 8.84l4.47 1.85a3.25 3.25 0 011.83-.56c.3 0 .58.04.85.12l2.7-3.95v-.05a3.25 3.25 0 113.25 3.25h-.06l-3.91 2.75a3.25 3.25 0 11-5.06 2.45L2.09 14.8A10 10 0 1012 2z"/>' 
+  },
+  { 
+    name: 'Uber', 
+    icon: '<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15H9V7h4c1.66 0 3 1.34 3 3s-1.34 3-3 3h-2v4z"/>' 
+  },
+  { 
+    name: 'Razer Gold', 
+    icon: '<path d="M12 2L2 7l10 5 10-5-10-5zm0 9L2 16l10 5 10-5-10-5z"/>' 
+  }
 ]
 
-// Duplicate arrays to create seamless infinite scrolling effect
+// Tripled lists to ensure smooth continuous marquee loops
 const doubledRow1 = computed(() => [...row1Partners, ...row1Partners, ...row1Partners])
 const doubledRow2 = computed(() => [...row2Partners, ...row2Partners, ...row2Partners])
 </script>
