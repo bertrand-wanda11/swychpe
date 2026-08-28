@@ -3,8 +3,6 @@
        <Navbar />
   <section class="offer-detail-hero">
     <div class="offer-detail-container">
-      
-      <!-- Left Column: Content & CTA -->
       <div class="offer-text-column">
         <h1 class="offer-heading">Save 10% On Global Vehicle Rentals</h1>
         
