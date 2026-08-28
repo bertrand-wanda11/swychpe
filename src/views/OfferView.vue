@@ -1,7 +1,8 @@
 <template>
-    <div class="">
+    <div class="swychpe-offer">
+            <Navbar />
   <section class="offers-hero">
-    <Navbar />
+
     <div class="offers-hero-container">
       
  
@@ -257,6 +258,13 @@ const filteredOffers = computed(() => {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
+.swychpe-offer {
+   width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #7B1FA2 0%, #4A148C 100%);
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
 /* Main Offers Section Wrapper */
 .offers-hero {
   width: 100%;

@@ -1,8 +1,7 @@
 <template>
-    <div class="">
-   
+    <div class="swychpe-learn">
+       <Navbar />
   <section class="offer-detail-hero">
-    <Navbar />
     <div class="offer-detail-container">
       
       <!-- Left Column: Content & CTA -->
@@ -143,6 +142,13 @@ import Footer from '@/components/Footer.vue';
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
+.swychpe-learn {
+   width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #7B1FA2 0%, #4A148C 100%);
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
 /* Hero Outer Section Wrapper */
 .offer-detail-hero {
   width: 100%;
