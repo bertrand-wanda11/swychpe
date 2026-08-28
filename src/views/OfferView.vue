@@ -2,10 +2,7 @@
     <div class="swychpe-offer">
             <Navbar />
   <section class="offers-hero">
-
     <div class="offers-hero-container">
-      
- 
       <div class="offers-text-column">
         <h1 class="offers-title">SwychPe Offers</h1>
         
