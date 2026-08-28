@@ -233,13 +233,291 @@
     </div>
   </section>
 
+
+  <section class="become-partner-section">
+    <div class="become-partner-container">
+      
+      <!-- Top Section Header -->
+      <div class="form-header-text">
+        <h2 class="form-title">Become a Partner</h2>
+        <p class="form-subtitle">
+          Complete the application below to integrate SwychPe financial solutions and grow your customer base.
+        </p>
+      </div>
+
+      <!-- Main Form Container Card -->
+      <div class="partner-form-card">
+        <form @submit.prevent="handleSubmit" class="partner-form">
+          
+          <!-- Field 1: Account Type Dropdown -->
+          <div class="form-group full-width">
+            <label class="input-label">Account Type *</label>
+            <div class="select-wrapper">
+              <select v-model="form.accountType" required class="form-input custom-select">
+                <option value="" disabled selected>Select your account type</option>
+                <option value="corporate">Corporate / Merchant</option>
+                <option value="sme">Small / Medium Enterprise</option>
+                <option value="fintech">Fintech / Financial Institution</option>
+              </select>
+              <span class="select-arrow">▼</span>
+            </div>
+          </div>
+
+          <!-- Field 2: Company Name -->
+          <div class="form-group full-width">
+            <label class="input-label">Company Name *</label>
+            <input 
+              type="text" 
+              v-model="form.companyName" 
+              placeholder="(As stated on official business registration documents)" 
+              required 
+              class="form-input"
+            />
+          </div>
+
+          <!-- Field 3 & 4: Number of Outlets & Registration Number -->
+          <div class="form-row">
+            <div class="form-group">
+              <label class="input-label">Number of Outlets / Branches *</label>
+              <input 
+                type="number" 
+                v-model="form.branches" 
+                placeholder="e.g. 5" 
+                required 
+                class="form-input"
+              />
+            </div>
+            <div class="form-group">
+              <label class="input-label">Commercial Registration (CR) Number</label>
+              <input 
+                type="text" 
+                v-model="form.crNumber" 
+                placeholder="Enter registration number" 
+                class="form-input"
+              />
+            </div>
+          </div>
+
+          <!-- Field 5 & 6: Phone & Email -->
+          <div class="form-row">
+            <div class="form-group">
+              <label class="input-label">Business Mobile Number *</label>
+              <input 
+                type="tel" 
+                v-model="form.phone" 
+                placeholder="+237 6XX XXX XXX" 
+                required 
+                class="form-input"
+              />
+            </div>
+            <div class="form-group">
+              <label class="input-label">Official Email Address *</label>
+              <input 
+                type="email" 
+                v-model="form.email" 
+                placeholder="partner@company.com" 
+                required 
+                class="form-input"
+              />
+            </div>
+          </div>
+
+          <!-- Field 7: Head Office Address -->
+          <div class="form-group full-width">
+            <label class="input-label">Headquarters Physical Address</label>
+            <input 
+              type="text" 
+              v-model="form.address" 
+              placeholder="City, Street, Building Name" 
+              class="form-input"
+            />
+          </div>
+
+          <!-- File Upload Row: Company Profile & Supplemental Documents -->
+          <div class="form-row upload-row">
+            <div class="form-group">
+              <label class="input-label">Company Profile Document</label>
+              <div class="file-upload-box">
+                <input type="file" @change="handleFileUpload($event, 'companyProfile')" id="file-profile" class="file-input" />
+                <label for="file-profile" class="file-label">
+                  <span class="file-text">{{ profileFileName || 'Upload Document' }}</span>
+                  <span class="file-icon">📎</span>
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="input-label">Other Supporting Attachments</label>
+              <div class="file-upload-box">
+                <input type="file" @change="handleFileUpload($event, 'otherDoc')" id="file-other" class="file-input" />
+                <label for="file-other" class="file-label">
+                  <span class="file-text">{{ otherFileName || 'Upload Document' }}</span>
+                  <span class="file-icon">📎</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Checkbox Section: Type of Collaboration -->
+          <div class="collaboration-section">
+            <label class="section-subheading">Type of Collaboration *</label>
+            
+            <div class="checkbox-grid">
+              
+              <label class="custom-checkbox-card">
+                <input type="checkbox" value="cashback" v-model="form.collaborations" />
+                <span class="checkbox-mark"></span>
+                <span class="checkbox-label-text">
+                  <strong>SwychPe Cashback Partner:</strong> Provide instant purchase rewards to cardholders
+                </span>
+              </label>
+
+              <label class="custom-checkbox-card">
+                <input type="checkbox" value="vouchers" v-model="form.collaborations" />
+                <span class="checkbox-mark"></span>
+                <span class="checkbox-label-text">
+                  <strong>Voucher & Discounts:</strong> Offer discounted bulk purchase gift cards and vouchers
+                </span>
+              </label>
+
+              <label class="custom-checkbox-card">
+                <input type="checkbox" value="miniApp" v-model="form.collaborations" />
+                <span class="checkbox-mark"></span>
+                <span class="checkbox-label-text">
+                  <strong>Mini-App Integration:</strong> Showcase a dedicated storefront module inside the SwychPe app
+                </span>
+              </label>
+
+              <label class="custom-checkbox-card">
+                <input type="checkbox" value="bnpl" v-model="form.collaborations" />
+                <span class="checkbox-mark"></span>
+                <span class="checkbox-label-text">
+                  <strong>Flexible Installments (BNPL):</strong> Enable customers to split payments with zero interest
+                </span>
+              </label>
+
+              <label class="custom-checkbox-card">
+                <input type="checkbox" value="loyalty" v-model="form.collaborations" />
+                <span class="checkbox-mark"></span>
+                <span class="checkbox-label-text">
+                  <strong>Earn & Burn Program:</strong> Integrate joint loyalty and reward point programs
+                </span>
+              </label>
+
+              <label class="custom-checkbox-card">
+                <input type="checkbox" value="others" v-model="form.collaborations" />
+                <span class="checkbox-mark"></span>
+                <span class="checkbox-label-text">
+                  <strong>Others:</strong> Custom strategic partnership models
+                </span>
+              </label>
+
+            </div>
+          </div>
+
+          <!-- Terms Agreement Checkbox -->
+          <div class="terms-agree-group">
+            <label class="terms-checkbox-label">
+              <input type="checkbox" v-model="form.agreedTerms" required />
+              <span class="checkbox-mark"></span>
+              <span class="terms-text">I agree to the partner program terms and conditions *</span>
+            </label>
+          </div>
+
+          <!-- Form Submit Button -->
+          <div class="form-submit-row">
+            <button type="submit" class="btn-submit-partner">
+              Submit Application
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="partner-support-section">
+    <div class="partner-support-container">
+      
+      <!-- Section Header -->
+      <div class="support-header-text">
+        <h2 class="support-title">Share your questions with us</h2>
+        <p class="support-subtitle">
+          Reach out to the SwychPe support team through our primary communication channels:
+        </p>
+      </div>
+
+      <!-- Top Row: 3 Equal Dark Cards -->
+      <div class="support-cards-grid">
+        
+        <!-- Card 1: Phone Support -->
+        <div class="support-card">
+          <div class="card-icon-wrapper">
+            <div class="icon-glow">
+              <span class="icon-symbol">📞</span>
+            </div>
+          </div>
+          <h3 class="card-label">Call us on</h3>
+          <a href="tel:+237670126098" class="btn-pill-outline">
+            <span class="btn-icon">📞</span>
+            +237 670126098
+          </a>
+        </div>
+
+        <!-- Card 2: Email Support -->
+        <div class="support-card">
+          <div class="card-icon-wrapper">
+            <div class="icon-glow">
+              <span class="icon-symbol">✉️</span>
+            </div>
+          </div>
+          <h3 class="card-label">Mail us on</h3>
+          <a href="mailto:support@swychpe.com" class="btn-pill-outline">
+            <span class="btn-icon">✉️</span>
+            support@swychpe.com
+          </a>
+        </div>
+
+        <!-- Card 3: Locations & Outlets -->
+        <div class="support-card">
+          <div class="card-icon-wrapper">
+            <div class="icon-glow">
+              <span class="icon-symbol">📍</span>
+            </div>
+          </div>
+          <h3 class="card-label">Outlets & Service Points</h3>
+          <router-link to="/branches" class="btn-pill-outline">
+            Find a Swychr Agent
+          </router-link>
+        </div>
+
+      </div>
+
+      <!-- Bottom Row: 1 Full-Width Dark Banner Card -->
+      <div class="support-card-wide">
+        <div class="card-icon-wrapper">
+          <div class="icon-glow">
+            <span class="icon-symbol">📱</span>
+          </div>
+        </div>
+        <h3 class="card-label">Submit inquiries directly via mobile app</h3>
+        <router-link to="/download" class="btn-pill-outline">
+          Download SwychPe App
+        </router-link>
+      </div>
+
+    </div>
+  </section>
+
+  
    <Footer />  
   </div>
 </template>
 
 
 <script setup>
-import { computed } from 'vue'
+import { reactive, computed } from 'vue'
 import Navbar from '@/components/Navbar.vue';
 import Footer from '@/components/Footer.vue';
 const row1Partners = [
@@ -324,6 +602,33 @@ const row2Partners = [
 // Tripled lists to ensure smooth continuous marquee loops
 const doubledRow1 = computed(() => [...row1Partners, ...row1Partners, ...row1Partners])
 const doubledRow2 = computed(() => [...row2Partners, ...row2Partners, ...row2Partners])
+
+const form = reactive({
+  accountType: '',
+  companyName: '',
+  branches: '',
+  crNumber: '',
+  phone: '',
+  email: '',
+  address: '',
+  collaborations: [],
+  agreedTerms: false
+})
+
+const profileFileName = ref('')
+const otherFileName = ref('')
+
+const handleFileUpload = (event, type) => {
+  const file = event.target.files[0]
+  if (file) {
+    if (type === 'companyProfile') profileFileName.value = file.name
+    if (type === 'otherDoc') otherFileName.value = file.name
+  }
+}
+
+const handleSubmit = () => {
+  alert('Thank you! Your partnership request has been submitted successfully.')
+}
 </script>
 
 <style scoped>
@@ -1049,6 +1354,545 @@ const doubledRow2 = computed(() => [...row2Partners, ...row2Partners, ...row2Par
 
   .logo-brand-name {
     font-size: 0.75rem;
+  }
+}
+
+
+.become-partner-section {
+  width: 100%;
+  background-color: #f3ecf9;
+  padding: 5rem 1.5rem 6rem 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #150324;
+  display: flex;
+  justify-content: center;
+}
+
+.become-partner-container {
+  max-width: 960px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Text */
+.form-header-text {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 600px;
+}
+
+.form-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #150324;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.5px;
+}
+
+.form-subtitle {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #5c4468;
+  line-height: 1.6;
+}
+
+/* Swychr Brand Dark Purple Form Card */
+.partner-form-card {
+  width: 100%;
+  background: linear-gradient(160deg, #2b083e 0%, #150324 100%);
+  border-radius: 36px;
+  padding: 3.5rem 3rem;
+  box-shadow: 0 25px 60px rgba(21, 3, 36, 0.25);
+  border: 1px solid rgba(123, 31, 162, 0.3);
+}
+
+.partner-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Grid Layout Rows */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form-group.full-width {
+  width: 100%;
+}
+
+.input-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #E1BEE7;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.2px;
+}
+
+/* Minimalist Underline Inputs */
+.form-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1.5px solid rgba(225, 190, 231, 0.4);
+  padding: 0.75rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #ffffff;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.85rem;
+}
+
+.form-input:focus {
+  border-bottom-color: #E1BEE7;
+}
+
+/* Custom Select Dropdown Styling */
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.custom-select {
+  appearance: none;
+  cursor: pointer;
+  padding-right: 2rem;
+}
+
+.custom-select option {
+  background-color: #150324;
+  color: #ffffff;
+}
+
+.select-arrow {
+  position: absolute;
+  right: 0;
+  bottom: 0.75rem;
+  color: #E1BEE7;
+  font-size: 0.75rem;
+  pointer-events: none;
+}
+
+/* File Upload Attachment Inputs */
+.upload-row {
+  margin-top: 0.5rem;
+}
+
+.file-upload-box {
+  position: relative;
+  width: 100%;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1.5px solid rgba(225, 190, 231, 0.4);
+  padding: 0.75rem 0;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.file-label:hover {
+  border-bottom-color: #E1BEE7;
+}
+
+.file-text {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-icon {
+  color: #E1BEE7;
+  font-size: 1.1rem;
+}
+
+/* Collaboration Checkboxes Block */
+.collaboration-section {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-subheading {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.25rem;
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.custom-checkbox-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.custom-checkbox-card input,
+.terms-checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox-mark {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
+  border: 1.5px solid rgba(225, 190, 231, 0.6);
+  border-radius: 4px;
+  margin-top: 2px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.custom-checkbox-card input:checked ~ .checkbox-mark,
+.terms-checkbox-label input:checked ~ .checkbox-mark {
+  background-color: #7B1FA2;
+  border-color: #E1BEE7;
+}
+
+.checkbox-mark::after {
+  content: '';
+  position: absolute;
+  display: none;
+  left: 5px;
+  top: 1px;
+  width: 4px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.custom-checkbox-card input:checked ~ .checkbox-mark::after,
+.terms-checkbox-label input:checked ~ .checkbox-mark::after {
+  display: block;
+}
+
+.checkbox-label-text {
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+}
+
+.checkbox-label-text strong {
+  color: #ffffff;
+}
+
+/* Terms Agreement Checkbox */
+.terms-agree-group {
+  margin-top: 0.5rem;
+}
+
+.terms-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.terms-text {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #E1BEE7;
+}
+
+/* Centered CTA Submit Button */
+.form-submit-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.btn-submit-partner {
+  background-color: #E1BEE7;
+  color: #150324;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  padding: 0.9rem 3.5rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(225, 190, 231, 0.25);
+}
+
+.btn-submit-partner:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.35);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (DESKTOP, TABLET, MOBILE)
+   ========================================================================== */
+@media (max-width: 992px) {
+  .checkbox-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .partner-form-card {
+    padding: 2.5rem 1.5rem;
+    border-radius: 28px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .become-partner-section {
+    padding: 3.5rem 1rem;
+  }
+
+  .form-title {
+    font-size: 1.9rem;
+  }
+
+  .btn-submit-partner {
+    width: 100%;
+    padding: 0.95rem;
+  }
+} 
+
+/* Main Background Outer Wrapper */
+.partner-support-section {
+  width: 100%;
+  background-color: #f3ecf9;
+  padding: 5rem 1.5rem 6rem 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #150324;
+  display: flex;
+  justify-content: center;
+}
+
+.partner-support-container {
+  max-width: 1080px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Header Text Styling */
+.support-header-text {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.support-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #150324;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.5px;
+}
+
+.support-subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #5c4468;
+  line-height: 1.6;
+}
+
+/* Top 3-Card Grid */
+.support-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* Individual Dark Purple Card */
+.support-card {
+  background: linear-gradient(160deg, #2b083e 0%, #150324 100%);
+  border-radius: 28px;
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid rgba(123, 31, 162, 0.3);
+  box-shadow: 0 15px 35px rgba(21, 3, 36, 0.18);
+  transition: all 0.3s ease;
+}
+
+.support-card:hover {
+  transform: translateY(-5px);
+  border-color: #E1BEE7;
+  box-shadow: 0 20px 45px rgba(123, 31, 162, 0.28);
+}
+
+/* Bottom Full-Width Card */
+.support-card-wide {
+  background: linear-gradient(160deg, #2b083e 0%, #150324 100%);
+  border-radius: 28px;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid rgba(123, 31, 162, 0.3);
+  box-shadow: 0 15px 35px rgba(21, 3, 36, 0.18);
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.support-card-wide:hover {
+  transform: translateY(-5px);
+  border-color: #E1BEE7;
+  box-shadow: 0 20px 45px rgba(123, 31, 162, 0.28);
+}
+
+/* Icon Graphics Styling */
+.card-icon-wrapper {
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-glow {
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, rgba(225, 190, 231, 0.2) 0%, rgba(123, 31, 162, 0.3) 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(225, 190, 231, 0.4);
+}
+
+.icon-symbol {
+  font-size: 1.4rem;
+}
+
+/* Card Heading Text */
+.card-label {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+/* Pill-Shaped Outline Action Buttons */
+.btn-pill-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1.5px solid #E1BEE7;
+  border-radius: 50px;
+  padding: 0.65rem 1.6rem;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.btn-pill-outline:hover {
+  background-color: #E1BEE7;
+  color: #150324;
+  box-shadow: 0 8px 20px rgba(225, 190, 231, 0.3);
+}
+
+.btn-icon {
+  font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (DESKTOP, TABLET, MOBILE)
+   ========================================================================== */
+@media (max-width: 992px) {
+  .support-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .support-title {
+    font-size: 2.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .partner-support-section {
+    padding: 3.5rem 1.25rem;
+  }
+
+  .support-header-text {
+    text-align: center;
+  }
+
+  .support-title {
+    font-size: 1.8rem;
+  }
+
+  .support-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .support-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .support-card,
+  .support-card-wide {
+    padding: 2rem 1.25rem;
+    border-radius: 22px;
+  }
+
+  .btn-pill-outline {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 0.82rem;
   }
 }
 </style>
