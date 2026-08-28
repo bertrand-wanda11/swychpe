@@ -1,7 +1,8 @@
 <template>
     <div class="">
-     <Navbar />
+   
   <section class="offer-detail-hero">
+    <Navbar />
     <div class="offer-detail-container">
       
       <!-- Left Column: Content & CTA -->

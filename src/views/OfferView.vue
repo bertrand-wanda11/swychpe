@@ -1,7 +1,7 @@
 <template>
     <div class="">
-       <Navbar />
   <section class="offers-hero">
+    <Navbar />
     <div class="offers-hero-container">
       
  
