@@ -126,15 +126,72 @@
   </section>
 
 
+
+  <section class="offer-faq-section">
+    <div class="offer-faq-container">
+      
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+
+      <div class="faq-accordion-list">
+        <div 
+          v-for="(item, index) in faqs" 
+          :key="index"
+          :class="['faq-item', { active: openIndex === index }]"
+        >
+          <!-- Accordion Header Row -->
+          <button class="faq-header-btn" @click="toggleFAQ(index)">
+            <span class="faq-toggle-icon">
+              <span class="icon-symbol">{{ openIndex === index ? '−' : '+' }}</span>
+            </span>
+            <span class="faq-question-text">{{ item.question }}</span>
+          </button>
+
+          <!-- Accordion Content Body -->
+          <div v-if="openIndex === index" class="faq-answer-body">
+            <p>{{ item.answer }}</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
    <Footer />
     </div>
     </template>
 
 
 <script setup>
+import { ref } from 'vue'
 import Navbar from '@/components/Navbar.vue';
 import Footer from '@/components/Footer.vue';
+
+const openIndex = ref(null)
+
+const toggleFAQ = (index) => {
+  openIndex.value = openIndex.value === index ? null : index
+}
+
+// Rephrased FAQ Data for SwychPe Offer Detail Page
+const faqs = ref([
+  {
+    question: "Is the discount valid if I complete my booking directly inside the mobile app?",
+    answer: "To claim the discount, reservations must be completed via the dedicated promotional web link. Direct bookings completed through third-party mobile applications or standard homepages are ineligible for the discount."
+  },
+  {
+    question: "Does the 10% discount apply to all additional rental charges and taxes?",
+    answer: "The 10% discount applies exclusively to the base vehicle rental rate. Additional charges such as local taxes, mandatory insurance coverage, fuel deposits, and optional add-ons (GPS, child seats) are excluded from the promotional rate."
+  },
+  {
+    question: "Which SwychPe cards are eligible for this offer?",
+    answer: "All active SwychPe Debit, Prepaid, and World Virtual Cards are eligible for this promotion as long as the payment is settled using your valid SwychPe card details at checkout."
+  }
+])
 </script>
+
 
 
 <style scoped>
