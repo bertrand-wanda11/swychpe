@@ -40,7 +40,7 @@
         <a href="/about">About SwychPe</a>
         <a href="/term">Terms & Conditions</a>
         <a href="/privacy">Privacy Policy</a>
-        <a href="/disclaimer">Disclaimer</a>
+        <a href="/disclaim">Disclaimer</a>
       </nav>
 
       <!-- Social Icons -->
