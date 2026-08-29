@@ -25,7 +25,7 @@
     <a href="/finance" class="pricing-link">
       <span class="pricing-icon">💳</span> Finance & Savings
     </a>
-    <a href="#get-app" class="btn-get-app">Get the App</a>
+    <a href="/request" class="btn-get-app">Get the App</a>
   </div>
 
   <!-- Mobile Hamburger Toggle Button (Hidden on Desktop) -->

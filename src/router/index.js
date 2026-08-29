@@ -51,9 +51,23 @@ const router = createRouter({
       component: () => import('../views/LearnView.vue'),
     },
 
+           {
+      path: '/term',
+      name: 'term',
+      component: () => import('../views/TermView.vue'),
+    },
 
+           {
+      path: '/privacy',
+      name: 'privacy',
+      component: () => import('../views/PrivacyView.vue'),
+    },
 
-
+            {
+      path: '/disclaim',
+      name: 'disclaim',
+      component: () => import('../views/DisclaimView.vue'),
+    },
   ],
 })
 
