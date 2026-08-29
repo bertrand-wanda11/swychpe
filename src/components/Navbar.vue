@@ -66,7 +66,7 @@
     <a href="/finance" class="mobile-pricing-link" @click="closeMobileMenu">
       💳 Finance & Savings
     </a>
-    <a href="#get-app" class="btn-mobile-get-app" @click="closeMobileMenu">
+    <a href="/request" class="btn-mobile-get-app" @click="closeMobileMenu">
       Get the App
     </a>
   </nav>
