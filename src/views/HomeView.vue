@@ -10,7 +10,7 @@
           <p class="hero-subtitle">
             Manage everyday payments, transfers, and savings effortlessly. SwychPe brings all your essential financial tools together into one intuitive mobile app powered by Swychr.
           </p>
-          <a href="#download" class="btn-download">Get SwychPe Now</a>
+          <a href="/request" class="btn-download">Get SwychPe Now</a>
         </div>
 
         <div class="hero-graphic">
@@ -41,7 +41,7 @@
           <p class="section-description">
             Your SwychPe multi-currency card enables seamless global transactions across multiple currencies without hidden fees or currency conversion surcharges.
           </p>
-          <a href="#request-card" class="btn-primary-purple">Get your card</a>
+          <a href="/request" class="btn-primary-purple">Get your card</a>
         </div>
 
         <!-- Right Column: Dual Feature Cards Grid -->
@@ -143,7 +143,7 @@
       <p class="account-description">
       SwychPe integrates all your banking operations and everyday lifestyle payments into one powerful app, offering full visibility and control over your money.
       </p>
-      <a href="#open-account" class="btn-account-cta">Create your account</a>
+      <a href="/request" class="btn-account-cta">Create your account</a>
     </div>
 
   </div>
@@ -417,7 +417,7 @@
         <p class="privileges-description">
           Enjoy complimentary airport lounge access, VIP hotel upgrades, worldwide travel insurance, and premium merchant discounts.
         </p>
-        <a href="#learn-more" class="btn-privileges-cta">Learn more</a>
+        <a href="/learn" class="btn-privileges-cta">Learn more</a>
       </div>
 
       <!-- Right Lifestyle Image Display -->
