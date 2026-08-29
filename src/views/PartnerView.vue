@@ -517,7 +517,7 @@
 
 
 <script setup>
-import { reactive, computed } from 'vue'
+import { reactive, computed, ref } from 'vue'
 import Navbar from '@/components/Navbar.vue';
 import Footer from '@/components/Footer.vue';
 const row1Partners = [
