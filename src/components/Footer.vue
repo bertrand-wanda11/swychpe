@@ -37,10 +37,10 @@
 
       <!-- Legal Links -->
       <nav class="legal-links">
-        <a href="#about">About SwychPe</a>
-        <a href="#terms">Terms & Conditions</a>
-        <a href="#privacy">Privacy Policy</a>
-        <a href="#disclaimer">Disclaimer</a>
+        <a href="/about">About SwychPe</a>
+        <a href="/term">Terms & Conditions</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/disclaimer">Disclaimer</a>
       </nav>
 
       <!-- Social Icons -->
