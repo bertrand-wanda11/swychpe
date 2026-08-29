@@ -162,7 +162,7 @@
       <p class="rewards-description">
         Earn perks every time you pay, shop, or transfer. Unlock access to premium cashbacks, discounts, and exclusive partner perks through SwychPe's built-in rewards experience.
       </p>
-      <a href="#get-app" class="btn-rewards-cta">Get the App</a>
+      <a href="/request" class="btn-rewards-cta">Get the App</a>
     </div>
 
     <!-- Right Column: Dual Interactive 3D Flip Cards -->
@@ -417,7 +417,7 @@
         <p class="privileges-description">
           Enjoy complimentary airport lounge access, VIP hotel upgrades, worldwide travel insurance, and premium merchant discounts.
         </p>
-        <a href="/learn" class="btn-privileges-cta">Learn more</a>
+        <a href="/request" class="btn-privileges-cta">Learn more</a>
       </div>
 
       <!-- Right Lifestyle Image Display -->
