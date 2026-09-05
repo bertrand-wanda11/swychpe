@@ -4,16 +4,16 @@
   <section class="privacy-policy-section">
     <div class="privacy-policy-container">
       
-      <!-- Top Title & Accent Line -->
+   
       <div class="privacy-header-block">
         <h1 class="privacy-main-title">Privacy Policy</h1>
         <div class="privacy-accent-line"></div>
       </div>
 
-      <!-- Main Privacy Document Body -->
+      
       <div class="privacy-content-body">
         
-        <!-- Section 1 -->
+      
         <article class="privacy-article">
           <h2 class="privacy-section-title">1. Overview</h2>
           <p class="privacy-paragraph">
@@ -27,7 +27,7 @@
           </p>
         </article>
 
-        <!-- Section 2 -->
+    
         <article class="privacy-article">
           <h2 class="privacy-section-title">2. Purpose</h2>
           <p class="privacy-paragraph">
@@ -35,7 +35,7 @@
           </p>
         </article>
 
-        <!-- Section 3 -->
+
         <article class="privacy-article">
           <h2 class="privacy-section-title">3. Your Personal Data</h2>
           <p class="privacy-paragraph">
@@ -48,7 +48,7 @@
           </ul>
         </article>
 
-        <!-- Section 4 -->
+
         <article class="privacy-article">
           <h2 class="privacy-section-title">4. Purposes of Processing</h2>
           <p class="privacy-paragraph">Personal Data may be processed for the following operational needs:</p>
@@ -61,7 +61,7 @@
           </ul>
         </article>
 
-        <!-- Section 5 -->
+
         <article class="privacy-article">
           <h2 class="privacy-section-title">5. Legal Basis for Processing</h2>
           <p class="privacy-paragraph">
@@ -69,7 +69,7 @@
           </p>
         </article>
 
-        <!-- Section 6 -->
+       
         <article class="privacy-article">
           <h2 class="privacy-section-title">6. Disclosure of Personal Data</h2>
           <p class="privacy-paragraph">
@@ -77,7 +77,7 @@
           </p>
         </article>
 
-        <!-- Section 7 -->
+    
         <article class="privacy-article">
           <h2 class="privacy-section-title">7. Data Security & Retention</h2>
           <p class="privacy-paragraph">
@@ -85,7 +85,7 @@
           </p>
         </article>
 
-        <!-- Section 8 -->
+    
         <article class="privacy-article">
           <h2 class="privacy-section-title">8. Your Rights & Contacts</h2>
           <p class="privacy-paragraph">
@@ -124,7 +124,7 @@ import Footer from '@/components/Footer.vue';
 
 
 
-/* Section Background Outer Wrapper */
+
 .privacy-policy-section {
   width: 100%;
   background-color: #f3ecf9;
@@ -142,7 +142,7 @@ import Footer from '@/components/Footer.vue';
   flex-direction: column;
 }
 
-/* Header Text & Accent Line */
+
 .privacy-header-block {
   margin-bottom: 3rem;
   display: flex;
@@ -165,7 +165,7 @@ import Footer from '@/components/Footer.vue';
   border-radius: 2px;
 }
 
-/* Document Body Layout */
+
 .privacy-content-body {
   display: flex;
   flex-direction: column;
@@ -214,9 +214,7 @@ import Footer from '@/components/Footer.vue';
   color: #150324;
 }
 
-/* ==========================================================================
-   RESPONSIVE STYLING (DESKTOP, TABLET, MOBILE)
-   ========================================================================== */
+
 @media (max-width: 768px) {
   .privacy-policy-section {
     padding: 3.5rem 1.25rem;

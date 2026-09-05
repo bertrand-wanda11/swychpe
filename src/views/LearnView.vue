@@ -11,7 +11,7 @@
           Unlock premium savings across a global fleet of cars by completing your reservation through the direct link below.
         </p>
 
-        <!-- Action & Metadata Row -->
+    
         <div class="offer-action-row">
           <a href="#claim-offer" class="btn-get-offer">
             Get Offer
@@ -29,7 +29,7 @@
         </div>
       </div>
 
-      <!-- Right Column: White Rounded Partner Banner -->
+    
       <div class="offer-banner-column">
         <div class="partner-banner-card">
           <span class="partner-logo-brand">Rentalcars.com</span>
@@ -43,34 +43,31 @@
   <section class="offer-body-section">
     <div class="offer-body-container">
       
-      <!-- TOP BLOCK: How It Works -->
+    
       <div class="how-it-works-block">
         
-        <!-- Left Visual Illustration / Map Container -->
+        
         <div class="works-visual-column">
           <div class="map-graphic-wrapper">
-            <!-- Floating Orbit Rings & Tokens Graphic -->
+        
             <svg class="orbit-bg" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
               <ellipse cx="150" cy="150" rx="120" ry="45" stroke="#E1BEE7" stroke-width="1.5" stroke-dasharray="4 4" transform="rotate(-25 150 150)" />
               <ellipse cx="150" cy="150" rx="110" ry="40" stroke="#7B1FA2" stroke-width="1.5" transform="rotate(35 150 150)" opacity="0.4" />
             </svg>
 
-            <!-- Map Pin Badge -->
             <div class="map-pin">
               <span>📍</span>
             </div>
 
-            <!-- Floating Coins/Tokens -->
             <div class="coin coin-1">FCFA</div>
             <div class="coin coin-2">€</div>
             <div class="coin coin-3">$</div>
 
-            <!-- 3D Map Silhouette -->
+           
             <div class="map-silhouette"></div>
           </div>
         </div>
 
-        <!-- Right Content Column -->
         <div class="works-content-column">
           <div class="works-header-row">
             <h2 class="section-heading">How it Works</h2>
@@ -91,10 +88,8 @@
 
       </div>
 
-      <!-- BOTTOM BLOCK: Terms and Conditions -->
       <div class="terms-conditions-block">
         
-        <!-- Left Text Content Column -->
         <div class="terms-content-column">
           <h2 class="section-heading">Terms and Conditions</h2>
 
@@ -111,7 +106,7 @@
           </ul>
         </div>
 
-        <!-- Right Lifestyle Photo Banner -->
+    
         <div class="terms-image-column">
           <div class="lifestyle-card">
             <div class="lifestyle-card-overlay">
@@ -138,7 +133,7 @@
           :key="index"
           :class="['faq-item', { active: openIndex === index }]"
         >
-          <!-- Accordion Header Row -->
+        
           <button class="faq-header-btn" @click="toggleFAQ(index)">
             <span class="faq-toggle-icon">
               <span class="icon-symbol">{{ openIndex === index ? '−' : '+' }}</span>
@@ -146,7 +141,7 @@
             <span class="faq-question-text">{{ item.question }}</span>
           </button>
 
-          <!-- Accordion Content Body -->
+          
           <div v-if="openIndex === index" class="faq-answer-body">
             <p>{{ item.answer }}</p>
           </div>
@@ -175,7 +170,6 @@ const toggleFAQ = (index) => {
   openIndex.value = openIndex.value === index ? null : index
 }
 
-// Rephrased FAQ Data for SwychPe Offer Detail Page
 const faqs = ref([
   {
     question: "Is the discount valid if I complete my booking directly inside the mobile app?",
@@ -204,7 +198,7 @@ const faqs = ref([
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
 }
-/* Hero Outer Section Wrapper */
+
 .offer-detail-hero {
   width: 100%;
   min-height: 70vh;
@@ -227,7 +221,7 @@ const faqs = ref([
   gap: 4rem;
 }
 
-/* Left Content Column Styling */
+
 .offer-text-column {
   display: flex;
   flex-direction: column;
@@ -252,7 +246,7 @@ const faqs = ref([
   max-width: 580px;
 }
 
-/* Action Button & Metadata Styling */
+
 .offer-action-row {
   display: flex;
   align-items: center;
@@ -306,7 +300,7 @@ const faqs = ref([
   opacity: 0.6;
 }
 
-/* Right Partner Banner Card */
+
 .offer-banner-column {
   display: flex;
   justify-content: flex-end;
@@ -335,14 +329,12 @@ const faqs = ref([
 .partner-logo-brand {
   font-size: 2.4rem;
   font-weight: 800;
-  color: #1a4fa0; /* Original brand accent color */
+  color: #1a4fa0;
   letter-spacing: -0.5px;
   text-align: center;
 }
 
-/* ==========================================================================
-   RESPONSIVE STYLING (DESKTOP, TABLET, MOBILE)
-   ========================================================================== */
+
 @media (max-width: 1024px) {
   .offer-detail-container {
     grid-template-columns: 1fr;
@@ -423,7 +415,6 @@ const faqs = ref([
   gap: 6rem;
 }
 
-/* Common Section Headings */
 .section-heading {
   font-size: 2.2rem;
   font-weight: 800;
@@ -432,9 +423,7 @@ const faqs = ref([
   margin-bottom: 1.5rem;
 }
 
-/* ==========================================================================
-   TOP BLOCK: HOW IT WORKS
-   ========================================================================== */
+
 .how-it-works-block {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -442,7 +431,7 @@ const faqs = ref([
   gap: 4rem;
 }
 
-/* Left Orbit/Map Graphic */
+
 .works-visual-column {
   display: flex;
   justify-content: center;
@@ -513,7 +502,7 @@ const faqs = ref([
 .coin-2 { width: 36px; height: 36px; font-size: 0.85rem; bottom: 50px; left: 60px; }
 .coin-3 { width: 38px; height: 38px; font-size: 0.85rem; bottom: 70px; right: 50px; }
 
-/* Right Content Area */
+
 .works-content-column {
   display: flex;
   flex-direction: column;
@@ -567,9 +556,7 @@ const faqs = ref([
   color: #150324;
 }
 
-/* ==========================================================================
-   BOTTOM BLOCK: TERMS AND CONDITIONS
-   ========================================================================== */
+
 .terms-conditions-block {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
@@ -610,7 +597,7 @@ const faqs = ref([
   font-weight: bold;
 }
 
-/* Right Lifestyle Image Banner */
+
 .terms-image-column {
   display: flex;
   justify-content: flex-end;
@@ -646,9 +633,7 @@ const faqs = ref([
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN (DESKTOP, TABLET, MOBILE)
-   ========================================================================== */
+
 @media (max-width: 992px) {
   .how-it-works-block,
   .terms-conditions-block {
@@ -657,7 +642,7 @@ const faqs = ref([
   }
 
   .terms-image-column {
-    order: -1; /* Place image above text on tablet/mobile if desired */
+    order: -1; 
   }
 
   .lifestyle-card {

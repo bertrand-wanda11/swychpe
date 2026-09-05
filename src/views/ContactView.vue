@@ -4,7 +4,7 @@
       <section class="contact-hero">
     <div class="contact-hero-container">
       
-      <!-- Left Hero Content Column -->
+     
       <div class="contact-text-column">
         <h1 class="contact-title">Contact Us</h1>
         
@@ -14,35 +14,33 @@
         </p>
       </div>
 
-      <!-- Right Visual Column (3D Smartphone + Stacked Cards) -->
       <div class="contact-visual-column">
         
-        <!-- Stacked SwychPe Cards Fan Container -->
+    
         <div class="cards-fan-stack">
-          <!-- Card 1 (Far Right Tilted) -->
+      
           <div class="fan-card card-3">
             <div class="card-chip"></div>
             <div class="card-footer-logo">SwychPe</div>
           </div>
 
-          <!-- Card 2 (Middle Tilted) -->
+      
           <div class="fan-card card-2">
             <div class="card-chip"></div>
             <div class="card-footer-logo">SwychPe</div>
           </div>
 
-          <!-- Card 3 (Front Teal/Purple Tilted) -->
+  
           <div class="fan-card card-1">
             <div class="card-chip"></div>
             <div class="card-footer-logo">SwychPe</div>
           </div>
         </div>
 
-        <!-- 3D Smartphone UI Frame -->
+       
         <div class="phone-frame">
           <div class="phone-inner-screen">
-            
-            <!-- App Header UI -->
+
             <div class="app-top-bar">
               <div class="user-profile-info">
                 <span class="user-avatar-circle">👤</span>
@@ -54,14 +52,14 @@
               </div>
             </div>
 
-            <!-- Action Buttons Row -->
+        
             <div class="app-actions">
               <div class="action-btn"><span>⇄</span> Exchange</div>
               <div class="action-btn"><span>📋</span> History</div>
               <div class="action-btn"><span>+</span> Deposit</div>
             </div>
 
-            <!-- App Widgets Body -->
+        
             <div class="app-widgets">
               <div class="widget-card">
                 <span class="widget-title">Quick Pay</span>
@@ -79,7 +77,7 @@
           </div>
         </div>
 
-        <!-- Floating 3D Coin Graphics -->
+
         <div class="floating-coin coin-top">€</div>
         <div class="floating-coin coin-mid">FCFA</div>
 
@@ -92,11 +90,11 @@
   <section class="contact-form-section">
     <div class="contact-form-container">
       
-      <!-- Main Form Dark Card Container -->
+   
       <div class="contact-form-card">
         <form @submit.prevent="handleSubmit" class="contact-form">
           
-          <!-- Field 1: Full Name -->
+      
           <div class="form-group">
             <label class="input-label">Full Name *</label>
             <span class="label-subtext">(As per official identity document)</span>
@@ -109,7 +107,7 @@
             />
           </div>
 
-          <!-- Field 2: Mobile Number -->
+        
           <div class="form-group">
             <label class="input-label">Mobile Number *</label>
             <input 
@@ -121,7 +119,7 @@
             />
           </div>
 
-          <!-- Field 3: Email Address -->
+         
           <div class="form-group">
             <label class="input-label">Email Address *</label>
             <input 
@@ -133,7 +131,7 @@
             />
           </div>
 
-          <!-- Field 4: Reason for Contact Dropdown -->
+        
           <div class="form-group">
             <label class="input-label">Reason for Contact *</label>
             <div class="select-wrapper">
@@ -149,7 +147,7 @@
             </div>
           </div>
 
-          <!-- Terms Agreement Checkbox -->
+          
           <div class="terms-group">
             <label class="custom-checkbox-label">
               <input type="checkbox" v-model="form.agreedTerms" required />
@@ -158,7 +156,7 @@
             </label>
           </div>
 
-          <!-- Submit Button -->
+       
           <div class="form-submit-row">
             <button type="submit" class="btn-submit-contact">
               Submit
@@ -175,7 +173,7 @@
    <section class="partner-support-section">
     <div class="partner-support-container">
       
-      <!-- Section Header -->
+   
       <div class="support-header-text">
         <h2 class="support-title">Share your questions with us</h2>
         <p class="support-subtitle">
@@ -183,10 +181,10 @@
         </p>
       </div>
 
-      <!-- Top Row: 3 Equal Dark Cards -->
+      
       <div class="support-cards-grid">
         
-        <!-- Card 1: Phone Support -->
+    
         <div class="support-card">
           <div class="card-icon-wrapper">
             <div class="icon-glow">
@@ -200,7 +198,7 @@
           </a>
         </div>
 
-        <!-- Card 2: Email Support -->
+      
         <div class="support-card">
           <div class="card-icon-wrapper">
             <div class="icon-glow">
@@ -214,7 +212,7 @@
           </a>
         </div>
 
-        <!-- Card 3: Locations & Outlets -->
+   
         <div class="support-card">
           <div class="card-icon-wrapper">
             <div class="icon-glow">
@@ -229,7 +227,7 @@
 
       </div>
 
-      <!-- Bottom Row: 1 Full-Width Dark Banner Card -->
+   
       <div class="support-card-wide">
         <div class="card-icon-wrapper">
           <div class="icon-glow">
@@ -282,7 +280,7 @@ const handleSubmit = () => {
 }
 
 
-/* Main Contact Hero Section Wrapper */
+
 .contact-hero {
   width: 100%;
   min-height: 80vh;
@@ -306,7 +304,7 @@ const handleSubmit = () => {
   gap: 4rem;
 }
 
-/* Left Content Column Styling */
+
 .contact-text-column {
   display: flex;
   flex-direction: column;
@@ -330,7 +328,7 @@ const handleSubmit = () => {
   max-width: 520px;
 }
 
-/* Right Visual Column */
+
 .contact-visual-column {
   position: relative;
   display: flex;
@@ -339,7 +337,7 @@ const handleSubmit = () => {
   min-height: 480px;
 }
 
-/* 3D Smartphone Frame */
+
 .phone-frame {
   position: relative;
   width: 240px;
@@ -366,7 +364,7 @@ const handleSubmit = () => {
   overflow: hidden;
 }
 
-/* App Header Inside Phone */
+
 .app-top-bar {
   background: linear-gradient(145deg, #2b083e 0%, #150324 100%);
   border-radius: 20px;
@@ -398,7 +396,6 @@ const handleSubmit = () => {
   font-weight: 800;
 }
 
-/* Action Buttons inside App UI */
 .app-actions {
   display: flex;
   justify-content: space-between;
@@ -457,7 +454,7 @@ const handleSubmit = () => {
   color: #5c4468;
 }
 
-/* Stacked Credit Cards behind Phone */
+
 .cards-fan-stack {
   position: absolute;
   right: -20px;
@@ -520,7 +517,7 @@ const handleSubmit = () => {
   color: #ffffff;
 }
 
-/* Floating 3D Coin Accents */
+
 .floating-coin {
   position: absolute;
   background: linear-gradient(135deg, #7B1FA2 0%, #2b083e 100%);
@@ -551,9 +548,7 @@ const handleSubmit = () => {
   right: 10px;
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN (DESKTOP, TABLET, MOBILE)
-   ========================================================================== */
+
 @media (max-width: 1024px) {
   .contact-hero-container {
     grid-template-columns: 1fr;
@@ -625,7 +620,7 @@ const handleSubmit = () => {
   justify-content: center;
 }
 
-/* Swychr Brand Dark Purple Form Card */
+
 .contact-form-card {
   width: 100%;
   background: linear-gradient(160deg, #2b083e 0%, #150324 100%);
@@ -662,7 +657,7 @@ const handleSubmit = () => {
   margin-bottom: 0.4rem;
 }
 
-/* Minimalist Underline Input Fields */
+
 .form-input {
   width: 100%;
   background: transparent;
@@ -686,7 +681,7 @@ const handleSubmit = () => {
   border-bottom-color: #E1BEE7;
 }
 
-/* Custom Select Dropdown Styling */
+
 .select-wrapper {
   position: relative;
   width: 100%;
@@ -712,7 +707,7 @@ const handleSubmit = () => {
   pointer-events: none;
 }
 
-/* Terms Agreement Checkbox */
+
 .terms-group {
   margin-top: 0.5rem;
 }
@@ -770,7 +765,7 @@ const handleSubmit = () => {
   color: #E1BEE7;
 }
 
-/* Centered Pill Submit Button */
+
 .form-submit-row {
   display: flex;
   justify-content: center;
@@ -797,9 +792,7 @@ const handleSubmit = () => {
   box-shadow: 0 12px 30px rgba(255, 255, 255, 0.35);
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN (DESKTOP, TABLET, MOBILE)
-   ========================================================================== */
+
 @media (max-width: 768px) {
   .contact-form-card {
     padding: 3rem 1.75rem;
@@ -831,8 +824,6 @@ const handleSubmit = () => {
 }
 
 
-
-/* Main Background Outer Wrapper */
 .partner-support-section {
   width: 100%;
   background-color: #f3ecf9;
@@ -851,7 +842,6 @@ const handleSubmit = () => {
   gap: 2rem;
 }
 
-/* Header Text Styling */
 .support-header-text {
   text-align: left;
   margin-bottom: 1.5rem;
@@ -872,7 +862,7 @@ const handleSubmit = () => {
   line-height: 1.6;
 }
 
-/* Top 3-Card Grid */
+
 .support-cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -880,7 +870,6 @@ const handleSubmit = () => {
   width: 100%;
 }
 
-/* Individual Dark Purple Card */
 .support-card {
   background: linear-gradient(160deg, #2b083e 0%, #150324 100%);
   border-radius: 28px;
@@ -901,7 +890,7 @@ const handleSubmit = () => {
   box-shadow: 0 20px 45px rgba(123, 31, 162, 0.28);
 }
 
-/* Bottom Full-Width Card */
+
 .support-card-wide {
   background: linear-gradient(160deg, #2b083e 0%, #150324 100%);
   border-radius: 28px;
@@ -923,7 +912,6 @@ const handleSubmit = () => {
   box-shadow: 0 20px 45px rgba(123, 31, 162, 0.28);
 }
 
-/* Icon Graphics Styling */
 .card-icon-wrapper {
   margin-bottom: 1.25rem;
   display: flex;
@@ -946,7 +934,6 @@ const handleSubmit = () => {
   font-size: 1.4rem;
 }
 
-/* Card Heading Text */
 .card-label {
   font-size: 1.1rem;
   font-weight: 700;
@@ -954,7 +941,6 @@ const handleSubmit = () => {
   margin-bottom: 1.5rem;
 }
 
-/* Pill-Shaped Outline Action Buttons */
 .btn-pill-outline {
   display: inline-flex;
   align-items: center;
@@ -982,9 +968,7 @@ const handleSubmit = () => {
   font-size: 0.85rem;
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN (DESKTOP, TABLET, MOBILE)
-   ========================================================================== */
+
 @media (max-width: 992px) {
   .support-cards-grid {
     grid-template-columns: repeat(2, 1fr);

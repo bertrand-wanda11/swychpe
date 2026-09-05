@@ -4,7 +4,7 @@
      <Navbar />
     <section class="cards-hero-section">
       <div class="cards-hero-container">
-        <!-- Left Column: Copy & Primary CTA -->
+      
         <div class="cards-hero-left">
           <h1 class="cards-hero-title">
             Your card, tailored to your lifestyle
@@ -17,10 +17,9 @@
 </router-link>
         </div>
 
-        <!-- Right Column: 3D Floating Cards -->
         <div class="cards-hero-right">
           <div class="cards-display-stage">
-            <!-- Card 1: Black Premium -->
+       
             <div class="floating-card-wrapper card-left-float">
               <div class="card-3d-body premium-dark-card">
                 <div class="card-header-mini">
@@ -39,7 +38,6 @@
               <div class="glowing-ring-base purple-glow"></div>
             </div>
 
-            <!-- Card 2: Platinum Purple -->
             <div class="floating-card-wrapper card-right-float">
               <div class="card-3d-body platinum-purple-card">
                 <div class="card-header-mini">
@@ -62,13 +60,11 @@
       </div>
     </section>
 
-    <!-- ===================================================================
-         SECTION 2: CARD SELECTION & COMPARISON GRID (MATCHING SCREENSHOT)
-         =================================================================== -->
+
     <section id="card-showcase" class="cards-grid-section">
       <div class="cards-grid-container">
         
-        <!-- Category Filter Tabs -->
+   
         <div class="filter-tabs-wrapper">
           <button 
             v-for="tab in filterTabs" 
@@ -81,7 +77,7 @@
           </button>
         </div>
 
-        <!-- Floating Comparison Floating Bar (Appears when cards are checked) -->
+       
         <div v-if="selectedCompareIds.length > 0" class="compare-bar-floating">
           <span>Comparing <strong>{{ selectedCompareIds.length }}</strong> cards</span>
           <button class="btn-compare-now" @click="openCompareModal">
@@ -92,14 +88,13 @@
           </button>
         </div>
 
-        <!-- Cards Grid Container -->
         <div class="cards-grid">
           <div 
             v-for="card in filteredCards" 
             :key="card.id" 
             class="card-tile-container"
           >
-            <!-- Checkbox Option -->
+            
             <label class="compare-checkbox-label">
               <input 
                 type="checkbox" 
@@ -111,7 +106,7 @@
               <span class="checkbox-text">Compare</span>
             </label>
 
-            <!-- Card Preview Graphic -->
+         
             <div class="card-tile-preview">
               <div class="mini-card-graphic" :class="card.cardThemeClass">
                 <div class="mini-card-header">
@@ -125,11 +120,11 @@
               </div>
             </div>
 
-            <!-- Card Info Content -->
+          
             <div class="card-tile-content">
               <h3 class="card-tile-title">{{ card.title }}</h3>
 
-              <!-- Feature Bullets with Arrow Indicators -->
+            
               <ul class="card-feature-list">
                 <li v-for="(feature, fIndex) in card.features" :key="fIndex">
                   <span class="bullet-arrow">›</span>
@@ -137,13 +132,13 @@
                 </li>
               </ul>
 
-              <!-- Annual Fee Badge Pill -->
+             
               <div class="card-fee-badge">
                 <span class="fee-icon">🔒</span>
                 <span>Annual Fee: <strong>{{ card.fee }}</strong></span>
               </div>
 
-              <!-- Action Buttons Row -->
+           
               <div class="card-tile-actions">
               <router-link 
   :to="{ path: '/request', query: { card: card.title } }" 
@@ -164,24 +159,22 @@
     </section>
 
 
-    <!-- ===================================================================
-         SECTION 3: CONTACTLESS & DIGITAL WALLETS (MATCHING SCREENSHOT)
-         =================================================================== -->
+
     <section class="cards-contactless-section">
       <div class="cards-contactless-container">
         
-        <!-- Left Column: Twin Overlapping Mobile Device Mockups -->
+     
         <div class="contactless-graphic-left">
           <div class="mobile-mockups-wrapper">
             
-            <!-- Floating 3D Coins/Tokens Top Overhead -->
+     
             <div class="floating-tokens-group">
               <span class="token-chip token-1">✦</span>
               <span class="token-chip token-2">💳</span>
               <span class="token-chip token-3">✦</span>
             </div>
 
-            <!-- Phone 1 (Left / Back Phone - Account Balance & Widgets) -->
+     
             <div class="phone-mockup phone-left-back">
               <div class="phone-screen-content">
                 <div class="app-header-mini">
@@ -209,7 +202,7 @@
               </div>
             </div>
 
-            <!-- Phone 2 (Right / Front Phone - Card View & Wallet Badge) -->
+          
             <div class="phone-mockup phone-right-front">
               <div class="phone-screen-content">
                 <div class="app-header-title">SwychPe Sky</div>
@@ -218,7 +211,7 @@
                   <span class="mini-chip"></span>
                 </div>
                 
-                <!-- Digital Wallet Badge Option -->
+            
                 <div class="apple-wallet-badge">
                   <span> Add to Apple Wallet</span>
                 </div>
@@ -238,7 +231,7 @@
           </div>
         </div>
 
-        <!-- Right Column: Rephrased Copy & Request Button -->
+
         <div class="contactless-copy-right">
           <h2 class="contactless-title">
             Tap. Pay. Done.
@@ -271,10 +264,8 @@ const filterTabs = [
   { id: 'prepaid', label: 'Prepaid Cards' }
 ]
 
-// Compare Selection State
-const selectedCompareIds = ref([])
 
-// Card Data Array (Rephrased for SwychPe)
+const selectedCompareIds = ref([])
 const cardsData = [
   {
     id: 1,
@@ -369,9 +360,6 @@ const openCompareModal = () => {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
-/* ==========================================================================
-   GLOBAL CONTAINER STYLES
-   ========================================================================== */
 .swychpe-cards-page {
    width: 100%;
   min-height: 100vh;
@@ -380,9 +368,7 @@ const openCompareModal = () => {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* ==========================================================================
-   SECTION 1: HERO SECTION STYLES
-   ========================================================================== */
+
 .cards-hero-section {
   width: 100%;
   min-height: 82vh;
@@ -596,9 +582,7 @@ const openCompareModal = () => {
   100% { transform: translateY(-20px); }
 }
 
-/* ==========================================================================
-   SECTION 2: CARDS GRID & FILTER TABS (MATCHING SCREENSHOT)
-   ========================================================================== */
+
 .cards-grid-section {
   width: 100%;
   padding: 5rem 2rem 7rem 2rem;
@@ -616,7 +600,7 @@ const openCompareModal = () => {
   align-items: center;
 }
 
-/* Filter Navigation Tabs */
+
 .filter-tabs-wrapper {
   display: flex;
   gap: 1.5rem;
@@ -647,7 +631,7 @@ const openCompareModal = () => {
   box-shadow: 0 4px 12px rgba(123, 31, 162, 0.25);
 }
 
-/* Floating Comparison Bar */
+
 .compare-bar-floating {
   position: fixed;
   bottom: 30px;
@@ -689,7 +673,7 @@ const openCompareModal = () => {
   cursor: pointer;
 }
 
-/* Cards Grid Layout (Matching Screenshot Tile Placement) */
+
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -697,7 +681,7 @@ const openCompareModal = () => {
   width: 100%;
 }
 
-/* Single Tile Container */
+
 .card-tile-container {
   background: linear-gradient(175deg, #1b092a 0%, #10041d 100%);
   border-radius: 28px;
@@ -717,7 +701,6 @@ const openCompareModal = () => {
   border-color: rgba(225, 190, 231, 0.25);
 }
 
-/* Compare Checkbox Header */
 .compare-checkbox-label {
   display: inline-flex;
   align-items: center;
@@ -760,7 +743,7 @@ const openCompareModal = () => {
   color: rgba(255, 255, 255, 0.85);
 }
 
-/* Card Visual Graphic inside Tile */
+
 .card-tile-preview {
   display: flex;
   justify-content: center;
@@ -787,7 +770,7 @@ const openCompareModal = () => {
   transform: rotateZ(0deg) scale(1.04);
 }
 
-/* Mini Card Graphic Themes */
+
 .theme-teal-dark {
   background: linear-gradient(135deg, #004d40 0%, #0d1e22 100%);
 }
@@ -849,7 +832,7 @@ const openCompareModal = () => {
   text-transform: uppercase;
 }
 
-/* Tile Content */
+
 .card-tile-content {
   display: flex;
   flex-direction: column;
@@ -864,7 +847,7 @@ const openCompareModal = () => {
   letter-spacing: -0.3px;
 }
 
-/* Feature Bullets */
+
 .card-feature-list {
   list-style: none;
   padding: 0;
@@ -896,7 +879,7 @@ const openCompareModal = () => {
   line-height: 1.45;
 }
 
-/* Annual Fee Pill Badge */
+
 .card-fee-badge {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -914,7 +897,6 @@ const openCompareModal = () => {
   color: #E1BEE7;
 }
 
-/* Action Buttons (Apply Now & Learn More) */
 .card-tile-actions {
   display: flex;
   align-items: center;
@@ -965,11 +947,8 @@ const openCompareModal = () => {
   transform: translateX(4px);
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN (DESKTOP, TABLET, MOBILE)
-   ========================================================================== */
+
 @media (max-width: 1024px) {
-  /* Section 1 Hero Tablet */
   .cards-hero-section {
     padding: 4rem 2rem;
   }
@@ -988,7 +967,7 @@ const openCompareModal = () => {
     font-size: 2.6rem;
   }
 
-  /* Section 2 Grid Tablet: 2 Columns */
+
   .cards-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -996,7 +975,7 @@ const openCompareModal = () => {
 }
 
 @media (max-width: 640px) {
-  /* Section 1 Hero Mobile */
+
   .cards-hero-section {
     padding: 3rem 1.25rem;
   }
@@ -1027,7 +1006,7 @@ const openCompareModal = () => {
   .card-left-float { left: -10px; }
   .card-right-float { right: -10px; }
 
-  /* Section 2 Mobile: 1 Column */
+
   .cards-grid-section {
     padding: 3.5rem 1rem 5rem 1rem;
   }
@@ -1054,13 +1033,10 @@ const openCompareModal = () => {
 }
 
 
-/* ==========================================================================
-   SECTION 3: CONTACTLESS & DIGITAL WALLETS (SwychPe Branded)
-   ========================================================================== */
 .cards-contactless-section {
   width: 100%;
   padding: 6rem 2rem;
-  background-color: #f3ecf9; /* Matching soft light purple backdrop from screenshot */
+  background-color: #f3ecf9; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1077,7 +1053,7 @@ const openCompareModal = () => {
   align-items: center;
 }
 
-/* Left Column: Mobile Graphics Stage */
+
 .contactless-graphic-left {
   display: flex;
   justify-content: center;
@@ -1094,7 +1070,7 @@ const openCompareModal = () => {
   align-items: center;
 }
 
-/* Floating 3D Tokens Overhead */
+
 .floating-tokens-group {
   position: absolute;
   top: 10px;
@@ -1128,7 +1104,7 @@ const openCompareModal = () => {
   100% { transform: translateY(-12px) rotate(15deg); }
 }
 
-/* Phone Mockups Common Styles */
+
 .phone-mockup {
   position: absolute;
   width: 230px;
@@ -1140,7 +1116,7 @@ const openCompareModal = () => {
   border: 4px solid #23083e;
 }
 
-/* Back Left Phone */
+
 .phone-left-back {
   left: 20px;
   top: 40px;
@@ -1148,7 +1124,7 @@ const openCompareModal = () => {
   z-index: 1;
 }
 
-/* Front Right Phone */
+
 .phone-right-front {
   right: 20px;
   top: 10px;
@@ -1169,7 +1145,7 @@ const openCompareModal = () => {
   justify-content: space-between;
 }
 
-/* Screen 1 Elements */
+
 .user-avatar-badge {
   width: 28px;
   height: 28px;
@@ -1240,7 +1216,6 @@ const openCompareModal = () => {
 
 .green-text { color: #81c784; }
 
-/* Screen 2 Elements */
 .app-header-title {
   font-size: 0.85rem;
   font-weight: 800;
@@ -1289,7 +1264,7 @@ const openCompareModal = () => {
   padding: 0.4rem 0.2rem;
 }
 
-/* Right Column: Copy & Actions */
+
 .contactless-copy-right {
   display: flex;
   flex-direction: column;
@@ -1334,9 +1309,7 @@ const openCompareModal = () => {
   box-shadow: 0 14px 30px rgba(123, 31, 162, 0.35);
 }
 
-/* ==========================================================================
-   RESPONSIVE STYLES (DESKTOP, TABLET, MOBILE)
-   ========================================================================== */
+
 @media (max-width: 1024px) {
   .cards-contactless-container {
     grid-template-columns: 1fr;

@@ -11,7 +11,7 @@
       <img src="@/assets/images/swychpe-logo.png" alt="SwychPe Logo" class="logo-img" />
     </router-link>
 
-    <!-- Desktop Nav Links -->
+
     <nav class="nav-links desktop-only">
       <a href="/card">Cards</a>
       <a href="/offer">Offers</a>
@@ -20,7 +20,7 @@
     </nav>
   </div>
 
-  <!-- Desktop Right Section -->
+  
   <div class="nav-right desktop-only">
     <a href="/finance" class="pricing-link">
       <span class="pricing-icon">💳</span> Finance & Savings
@@ -28,7 +28,7 @@
     <a href="/request" class="btn-get-app">Get the App</a>
   </div>
 
-  <!-- Mobile Hamburger Toggle Button (Hidden on Desktop) -->
+
   <button 
     class="mobile-hamburger-btn" 
     :class="{ 'is-active': isMobileMenuOpen }" 
@@ -41,23 +41,23 @@
   </button>
 </header>
 
-<!-- Background Overlay Backdrop (Closes menu when tapping outside) -->
+
 <div 
   class="mobile-backdrop" 
   :class="{ 'is-open': isMobileMenuOpen }" 
   @click="closeMobileMenu"
 ></div>
 
-<!-- Sliding Mobile Drawer Menu -->
+
 <div class="mobile-drawer-menu" :class="{ 'is-open': isMobileMenuOpen }">
-  <!-- Close '✕' Button Header -->
+
   <div class="drawer-header">
     <button class="mobile-close-btn" @click="closeMobileMenu" aria-label="Close menu">
       ✕
     </button>
   </div>
 
-  <!-- Drawer Links -->
+
   <nav class="mobile-nav-links">
     <a href="/card" @click="closeMobileMenu">Cards</a>
     <a href="/offer" @click="closeMobileMenu">Offers</a>
@@ -91,9 +91,7 @@ const closeMobileMenu = () => {
 </script>
 
 <style scoped>
-/* ==========================================================================
-   HEADER / NAVBAR STYLES
-   ========================================================================== */
+
 .swychpe-navbar {
   width: 100%;
   display: flex;
@@ -202,11 +200,6 @@ const closeMobileMenu = () => {
 }
 
 
-
-
-/* ==========================================================================
-   NAVBAR & MOBILE DRAWER STYLES
-   ========================================================================== */
 .swychpe-navbar {
   position: relative;
   width: 100%;
@@ -223,7 +216,7 @@ const closeMobileMenu = () => {
   display: flex;
 }
 
-/* Hide Mobile Drawer on Desktop Screen Sizes */
+
 .mobile-drawer-menu {
   display: none;
   position: fixed;
@@ -260,7 +253,7 @@ const closeMobileMenu = () => {
   transition: all 0.3s ease;
 }
 
-/* Hamburger active transformation to X */
+
 .mobile-hamburger-btn.is-active .bar:nth-child(1) {
   transform: translateY(8.5px) rotate(45deg);
 }
@@ -271,20 +264,18 @@ const closeMobileMenu = () => {
   transform: translateY(-8.5px) rotate(-45deg);
 }
 
-/* ==========================================================================
-   MOBILE BREAKPOINT SWITCH (Activates under 850px width)
-   ========================================================================== */
+
 @media (max-width: 850px) {
   .swychpe-navbar {
     padding: 1rem 1.5rem;
   }
 
-  /* Hide Desktop Links on Mobile */
+ 
   .desktop-only {
     display: none !important;
   }
 
-  /* Show Hamburger Button and Drawer on Mobile */
+
   .mobile-hamburger-btn {
     display: flex;
   }
@@ -329,7 +320,7 @@ const closeMobileMenu = () => {
 }
 
 
-/* Dark Backdrop Blur Overlay */
+
 .mobile-backdrop {
   position: fixed;
   top: 0;
@@ -349,7 +340,7 @@ const closeMobileMenu = () => {
   pointer-events: auto;
 }
 
-/* Drawer Header & Close Button */
+
 .drawer-header {
   display: flex;
   justify-content: flex-end;
@@ -375,7 +366,6 @@ const closeMobileMenu = () => {
   background: rgba(255, 255, 255, 0.3);
 }
 
-/* Adjust Mobile Drawer Styling */
 .mobile-drawer-menu {
   padding: 1.5rem 2rem 2rem 2rem !important;
   z-index: 90 !important;

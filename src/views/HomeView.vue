@@ -30,10 +30,10 @@
       </div>
     </section>
 
-    <!-- SECTION 2: Multi-Currency Card Features (From Video) -->
+ 
     <section id="cards" class="swychpe-cards-section">
       <div class="section-container">
-        <!-- Left Column: Title & Action -->
+     
         <div class="section-left">
           <h2 class="section-title">
             Get your multi-currency virtual card in seconds!
@@ -44,10 +44,9 @@
           <a href="/request" class="btn-primary-purple">Get your card</a>
         </div>
 
-        <!-- Right Column: Dual Feature Cards Grid -->
+    
         <div class="section-cards-grid">
-          <!-- Dark Feature Card (Center element in video) -->
-        <!-- Interactive Rotating Dark Feature Card -->
+ 
 <div class="card-flip-wrapper">
   <div class="feature-card feature-dark card-inner">
     <div class="card-front">
@@ -69,7 +68,7 @@
   </div>
 </div>
 
-          <!-- Light Feature Card (Right element in video) -->
+       
           <div class="feature-card feature-light">
             <div class="card-illustration-placeholder">
               <div class="mini-card-graphic">
@@ -86,24 +85,23 @@
     </section>
 
 
-    <!-- SECTION 3: Account Creation & All-in-One Hub (From Video) -->
 <section class="swychpe-account-section">
   <div class="account-container">
     
-    <!-- Left Column: Dual Rotating Feature Cards -->
+    
     <div class="cards-duo-wrapper">
       
-      <!-- Card 1: Interactive Flip Card -->
+   
       <div class="flip-card-container">
         <div class="flip-card-inner">
-          <!-- Front Face: Light Card with Illustration/Icon -->
+      
           <div class="flip-card-front card-light-style">
             <div class="graphic-box yellow-accent">
               <span class="card-emoji">📱</span>
             </div>
             <p class="front-card-label">SwychPe does it all for you</p>
           </div>
-          <!-- Back Face: Dark Card with Rephrased Text -->
+       
           <div class="flip-card-back card-dark-style">
             <span class="back-icon">📈</span>
             <p class="back-card-text">
@@ -113,17 +111,17 @@
         </div>
       </div>
 
-      <!-- Card 2: Interactive Flip Card -->
+
       <div class="flip-card-container">
         <div class="flip-card-inner">
-          <!-- Front Face: Light Card with Shield/Security Graphic -->
+        
           <div class="flip-card-front card-light-style">
             <div class="graphic-box teal-accent">
               <span class="card-emoji">🛡️</span>
             </div>
             <p class="front-card-label">Your finances are all in one place</p>
           </div>
-          <!-- Back Face: Dark Card with Rephrased Text -->
+        
           <div class="flip-card-back card-dark-style">
             <span class="back-icon">💼</span>
             <p class="back-card-text">
@@ -135,7 +133,6 @@
 
     </div>
 
-    <!-- Right Column: Heading, Rephrased Content, and CTA -->
     <div class="account-content-right">
       <h2 class="account-title">
        Create your SwychPe account in under 2 minutes
@@ -150,11 +147,11 @@
 </section>
 
 
-<!-- SECTION 4: Loyalty & Rewards Experience (From Video) -->
+
 <section id="offers" class="swychpe-rewards-section">
   <div class="rewards-container">
     
-    <!-- Left Column: Title, Rephrased Paragraph & CTA Button -->
+    
     <div class="rewards-content-left">
       <h2 class="rewards-title">
         Every transaction you make rewards you back
@@ -165,13 +162,13 @@
       <a href="/request" class="btn-rewards-cta">Get the App</a>
     </div>
 
-    <!-- Right Column: Dual Interactive 3D Flip Cards -->
+   
     <div class="rewards-duo-wrapper">
       
-      <!-- Card 1: Loyalty Program Card -->
+    
       <div class="rewards-flip-container">
         <div class="rewards-flip-inner">
-          <!-- Front Face: Dark Purple Loyalty Card -->
+   
           <div class="rewards-card-front rewards-dark-style">
             <div class="rewards-icon-badge">
               <span class="rewards-emoji">🌟</span>
@@ -180,7 +177,7 @@
               SwychPe's loyalty program seamlessly connects your app & card activity to keep giving you more value.
             </p>
           </div>
-          <!-- Back Face: Light Card with Rephrased Content -->
+       
           <div class="rewards-card-back rewards-light-style">
             <div class="graphic-box-mini purple-tint">
               <span class="rewards-emoji">🔍</span>
@@ -192,17 +189,17 @@
         </div>
       </div>
 
-      <!-- Card 2: Cashback & Gifts Card -->
+  
       <div class="rewards-flip-container">
         <div class="rewards-flip-inner">
-          <!-- Front Face: Light Card with Shopping/Gift Illustration -->
+     
           <div class="rewards-card-front rewards-light-style">
             <div class="graphic-box-mini peach-tint">
               <span class="rewards-emoji">🎁</span>
             </div>
             <p class="light-front-text">There’s always something special in store for you</p>
           </div>
-          <!-- Back Face: Dark Card with Cashback Info -->
+         
           <div class="rewards-card-back rewards-dark-style">
             <div class="rewards-icon-badge">
               <span class="rewards-emoji">%</span>
@@ -220,37 +217,37 @@
 </section>
 
 
-<!-- SECTION 5: Lifestyle Experience Banner (From Image) -->
+
 <section id="partners" class="swychpe-lifestyle-section">
   <div class="lifestyle-container">
     <h2 class="lifestyle-header-title">
       Discover even more ways SwychPe elevates your lifestyle
     </h2>
 
-    <!-- Panoramic Interactive Banner -->
+  
     <div class="lifestyle-banner">
       <div class="banner-overlay"></div>
       
       <div class="banner-features-grid">
-        <!-- Feature 1 -->
+
         <div class="lifestyle-feature-item">
           <span class="feature-badge-icon">🎬</span>
           <p class="feature-item-label">Book trending movie tickets</p>
         </div>
 
-        <!-- Feature 2 -->
+    
         <div class="lifestyle-feature-item">
           <span class="feature-badge-icon">🍽️</span>
           <p class="feature-item-label">Reserve top-tier dining</p>
         </div>
 
-        <!-- Feature 3 -->
+       
         <div class="lifestyle-feature-item">
           <span class="feature-badge-icon">✈️</span>
           <p class="feature-item-label">Plan your upcoming trip</p>
         </div>
 
-        <!-- Feature 4 -->
+      
         <div class="lifestyle-feature-item">
           <span class="feature-badge-icon">🏨</span>
           <p class="feature-item-label">Book your next getaway stay</p>
@@ -261,7 +258,6 @@
 </section>
 
 
-<!-- SECTION 6: Digital Gift Cards & Vouchers (Dual-Row Marquee) -->
 <section id="gift-cards" class="swychpe-giftcards-section">
   <div class="giftcards-container">
     <h2 class="giftcards-header-title">
@@ -271,41 +267,41 @@
       Discover ideal rewards for family, friends, or yourself within SwychPe’s extensive catalog of global digital cards. Explore, pick, and instantly send vouchers with just a few taps inside the app.
     </p>
 
-    <!-- MARQUEE ROW 1 (Moves Left) -->
+    
     <div class="marquee-wrapper">
       <div class="marquee-track track-left">
-        <!-- Tile 1 -->
+ 
         <div class="gift-card-tile">
           <span class="brand-icon">🎮</span>
           <span class="brand-name">Nintendo</span>
         </div>
-        <!-- Tile 2 -->
+        
         <div class="gift-card-tile">
           <span class="brand-icon">🎵</span>
           <span class="brand-name">iTunes</span>
         </div>
-        <!-- Tile 3 -->
+     
         <div class="gift-card-tile">
           <span class="brand-icon">🚗</span>
           <span class="brand-name">Careem</span>
         </div>
-        <!-- Tile 4 -->
+     
         <div class="gift-card-tile">
           <span class="brand-icon">🍿</span>
           <span class="brand-name">Netflix</span>
         </div>
-        <!-- Tile 5 -->
+ 
         <div class="gift-card-tile">
           <span class="brand-icon">⚔️</span>
           <span class="brand-name">Fortnite</span>
         </div>
-        <!-- Tile 6 -->
+      
         <div class="gift-card-tile">
           <span class="brand-icon">🎯</span>
           <span class="brand-name">PUBG Mobile</span>
         </div>
 
-        <!-- Duplicated for Loop -->
+  
         <div class="gift-card-tile">
           <span class="brand-icon">🎮</span>
           <span class="brand-name">Nintendo</span>
@@ -333,41 +329,40 @@
       </div>
     </div>
 
-    <!-- MARQUEE ROW 2 (Moves Right) -->
+   
     <div class="marquee-wrapper margin-top-row">
       <div class="marquee-track track-right">
-        <!-- Tile 1 -->
+ 
         <div class="gift-card-tile">
           <span class="brand-icon">🎧</span>
           <span class="brand-name">Spotify</span>
         </div>
-        <!-- Tile 2 -->
+      
         <div class="gift-card-tile">
           <span class="brand-icon">🛍️</span>
           <span class="brand-name">Amazon</span>
         </div>
-        <!-- Tile 3 -->
+     
         <div class="gift-card-tile">
           <span class="brand-icon">📱</span>
           <span class="brand-name">Google Play</span>
         </div>
-        <!-- Tile 4 -->
+   
         <div class="gift-card-tile">
           <span class="brand-icon">⚡</span>
           <span class="brand-name">Razer Gold</span>
         </div>
-        <!-- Tile 5 -->
+     
         <div class="gift-card-tile">
           <span class="brand-icon">🤖</span>
           <span class="brand-name">Roblox</span>
         </div>
-        <!-- Tile 6 -->
+   
         <div class="gift-card-tile">
           <span class="brand-icon">🍔</span>
           <span class="brand-name">HungerStation</span>
         </div>
 
-        <!-- Duplicated for Loop -->
         <div class="gift-card-tile">
           <span class="brand-icon">🎧</span>
           <span class="brand-name">Spotify</span>
@@ -399,17 +394,17 @@
 </section>
 
 
-<!-- SECTION 7: Exclusive Card Privileges Banner (From Image) -->
+
 <section class="swychpe-privileges-section">
   <div class="privileges-container">
     <div class="privileges-banner">
       
-      <!-- Interactive Badge Button in Top-Right Corner -->
+  
       <button class="plus-badge-btn" aria-label="Explore Privileges">
         <span>+</span>
       </button>
 
-      <!-- Left Content -->
+    
       <div class="privileges-content-left">
         <h2 class="privileges-title">
           Exclusive privileges with your SwychPe multi-currency card
@@ -420,7 +415,7 @@
         <a href="/request" class="btn-privileges-cta">Learn more</a>
       </div>
 
-      <!-- Right Lifestyle Image Display -->
+
       <div class="privileges-image-wrapper">
         <img 
           src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop" 
@@ -434,7 +429,7 @@
 </section>
 
 
-<!-- SECTION 8: Frequently Asked Questions (From Image) -->
+
 <section id="faq" class="swychpe-faq-section">
   <div class="faq-container">
     <h2 class="faq-section-title">Frequently Asked Questions</h2>
@@ -446,7 +441,7 @@
         class="faq-item"
         :class="{ 'is-open': openFaqIndex === index }"
       >
-        <!-- Accordion Header -->
+    
         <button class="faq-question-btn" @click="toggleFaq(index)">
           <span class="toggle-badge">
             {{ openFaqIndex === index ? '−' : '+' }}
@@ -454,7 +449,7 @@
           <span class="question-text">{{ faq.question }}</span>
         </button>
 
-        <!-- Accordion Body (Collapsible Answer) -->
+     
         <div v-show="openFaqIndex === index" class="faq-answer-content">
           <p>{{ faq.answer }}</p>
         </div>
@@ -464,17 +459,15 @@
 </section>
 
 
-<!-- SECTION 9: App Download & QR Code Banner (From Image) -->
 <section id="download" class="swychpe-appdownload-section">
   <div class="appdownload-container">
-    
-    <!-- Left Column: Multi-Device Mockup Graphic -->
+  
     <div class="appdownload-mockup-wrapper">
       <div class="pattern-bg-circle"></div>
       
-      <!-- Smartwatch & Phone Graphic Containers -->
+
       <div class="devices-stack">
-        <!-- Main Phone Graphic -->
+ 
         <div class="phone-frame phone-left">
           <div class="phone-screen">
             <div class="app-header-mini">
@@ -491,7 +484,7 @@
           </div>
         </div>
 
-        <!-- Secondary Phone Graphic -->
+   
         <div class="phone-frame phone-right">
           <div class="phone-screen screen-dark">
             <span class="screen-title-sub">Cards & Wallets</span>
@@ -499,7 +492,7 @@
           </div>
         </div>
 
-        <!-- Smartwatch Overlay -->
+   
         <div class="smartwatch-frame">
           <div class="watch-screen">
             <span class="watch-tap-text">Tap to Pay</span>
@@ -509,7 +502,7 @@
       </div>
     </div>
 
-    <!-- Right Column: Rephrased Copy, App Store Buttons & QR Code -->
+   
     <div class="appdownload-content-right">
       <h2 class="appdownload-title">
         Ready to experience SwychPe on your phone?
@@ -519,9 +512,9 @@
       </p>
 
       <div class="download-actions-grid">
-        <!-- Store Download Badges -->
+    
       <div class="store-buttons-col">
-  <!-- Apple App Store Button -->
+
   <a href="#app-store" class="store-badge-btn">
     <svg class="store-svg-icon" viewBox="0 0 384 512" fill="currentColor">
       <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 52.3-12 69.5-34.3z"/>
@@ -532,7 +525,7 @@
     </div>
   </a>
 
-  <!-- Google Play Store Button -->
+
   <a href="#google-play" class="store-badge-btn">
     <svg class="store-svg-icon play-color" viewBox="0 0 512 512">
       <path fill="#4CAF50" d="M48 48a16 16 0 0 0-16 16v384a16 16 0 0 0 25.3 12.8l200-148-52.5-52.8L48 48z"/>
@@ -547,7 +540,7 @@
   </a>
 </div>
 
-        <!-- Interactive QR Code Box -->
+    
         <div class="qr-code-box">
           <div class="qr-graphic">
             <div class="qr-pattern"></div>
@@ -786,7 +779,7 @@ const faqs = ref([
   box-shadow: 0 6px 18px rgba(74, 20, 140, 0.4);
 }
 
-/* Dual Feature Cards Grid */
+
 .section-cards-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -807,7 +800,7 @@ const faqs = ref([
   transform: translateY(-5px);
 }
 
-/* Dark Card (Center Card in Video) */
+
 .feature-dark {
   background: linear-gradient(160deg, #2a113b 0%, #150521 100%);
   color: #ffffff;
@@ -831,7 +824,7 @@ const faqs = ref([
   line-height: 1.6;
 }
 
-/* Light Card (Right Card in Video) */
+
 .feature-light {
   background: #ffffff;
   border: 1px solid #e8dfef;
@@ -850,7 +843,7 @@ const faqs = ref([
   justify-content: center;
 }
 
-/* 3D Perspective Container */
+
 .card-flip-wrapper {
   perspective: 1000px;
   min-height: 320px;
@@ -866,12 +859,12 @@ const faqs = ref([
   cursor: pointer;
 }
 
-/* Hover rotation matching the video effect */
+
 .card-flip-wrapper:hover .card-inner {
   transform: rotateY(180deg);
 }
 
-/* Front & Back Faces */
+
 .card-front,
 .card-back {
   position: absolute;
@@ -924,9 +917,7 @@ const faqs = ref([
   color: #ffffff;
 }
 
-/* ==========================================================================
-   RESPONSIVE BREAKPOINTS (Desktop, Tablet, Mobile)
-   ========================================================================== */
+
 @media (max-width: 1024px) {
   .swychpe-navbar {
     padding: 1.25rem 2rem;
@@ -990,9 +981,6 @@ const faqs = ref([
 }
 
 
-/* ==========================================================================
-   SECTION 3: INSTANT ACCOUNT CREATION & DUAL ROTATING CARDS
-   ========================================================================== */
 .swychpe-account-section {
   width: 100%;
   background-color: #ffffff;
@@ -1012,14 +1000,13 @@ const faqs = ref([
   align-items: center;
 }
 
-/* Dual 3D Cards Grid */
+
 .cards-duo-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.8rem;
 }
 
-/* 3D Flip Container Setup */
 .flip-card-container {
   perspective: 1000px;
   height: 340px;
@@ -1035,12 +1022,12 @@ const faqs = ref([
   cursor: pointer;
 }
 
-/* Hover Trigger: Rotate 180deg horizontally */
+
 .flip-card-container:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Common Card Face Styles */
+
 .flip-card-front,
 .flip-card-back {
   position: absolute;
@@ -1057,7 +1044,7 @@ const faqs = ref([
   box-sizing: border-box;
 }
 
-/* Front Face: Soft Pastel Style */
+
 .card-light-style {
   background: #f4eef9;
   border: 1px solid #e7d8f3;
@@ -1092,7 +1079,7 @@ const faqs = ref([
   text-align: center;
 }
 
-/* Back Face: Dark Purple Contrast Style */
+
 .card-dark-style {
   background: linear-gradient(160deg, #23083e 0%, #120323 100%);
   color: #ffffff;
@@ -1112,7 +1099,7 @@ const faqs = ref([
   color: rgba(255, 255, 255, 0.92);
 }
 
-/* Right Column Content */
+
 .account-content-right {
   display: flex;
   flex-direction: column;
@@ -1155,9 +1142,7 @@ const faqs = ref([
   box-shadow: 0 6px 18px rgba(74, 20, 140, 0.4);
 }
 
-/* ==========================================================================
-   RESPONSIVE BREAKPOINTS (Desktop, Tablet, Mobile)
-   ========================================================================== */
+
 @media (max-width: 1024px) {
   .swychpe-account-section {
     padding: 4.5rem 2rem;
@@ -1203,12 +1188,10 @@ const faqs = ref([
   }
 }
 
-/* ==========================================================================
-   SECTION 4: LOYALTY & REWARDS EXPERIENCE (From Video)
-   ========================================================================== */
+
 .swychpe-rewards-section {
   width: 100%;
-  background-color: #f8f6fc; /* Off-white contrast background */
+  background-color: #f8f6fc; 
   color: #2b113a;
   padding: 6rem 4rem;
   display: flex;
@@ -1225,7 +1208,7 @@ const faqs = ref([
   align-items: center;
 }
 
-/* Left Column Styling */
+
 .rewards-content-left {
   display: flex;
   flex-direction: column;
@@ -1268,14 +1251,14 @@ const faqs = ref([
   box-shadow: 0 6px 18px rgba(74, 20, 140, 0.4);
 }
 
-/* Dual 3D Flip Cards Grid */
+
 .rewards-duo-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.8rem;
 }
 
-/* 3D Flip Container Setup */
+
 .rewards-flip-container {
   perspective: 1000px;
   height: 350px;
@@ -1291,12 +1274,12 @@ const faqs = ref([
   cursor: pointer;
 }
 
-/* Hover Trigger: Smooth 3D Y-Axis Flip */
+
 .rewards-flip-container:hover .rewards-flip-inner {
   transform: rotateY(180deg);
 }
 
-/* Shared Face Styles */
+
 .rewards-card-front,
 .rewards-card-back {
   position: absolute;
@@ -1313,7 +1296,7 @@ const faqs = ref([
   box-sizing: border-box;
 }
 
-/* Light Card Styling */
+
 .rewards-light-style {
   background: #ffffff;
   border: 1px solid #e7d8f3;
@@ -1349,7 +1332,7 @@ const faqs = ref([
   text-align: center;
 }
 
-/* Dark Card Styling */
+
 .rewards-dark-style {
   background: linear-gradient(160deg, #23083e 0%, #120323 100%);
   color: #ffffff;
@@ -1383,9 +1366,7 @@ const faqs = ref([
   color: rgba(255, 255, 255, 0.92);
 }
 
-/* ==========================================================================
-   RESPONSIVE BREAKPOINTS (Desktop, Tablet, Mobile)
-   ========================================================================== */
+
 @media (max-width: 1024px) {
   .swychpe-rewards-section {
     padding: 4.5rem 2rem;
@@ -1432,9 +1413,6 @@ const faqs = ref([
 }
 
 
-/* ==========================================================================
-   SECTION 5: LIFESTYLE EXPERIENCE BANNER (From Image)
-   ========================================================================== */
 .swychpe-lifestyle-section {
   width: 100%;
   background-color: #ffffff;
@@ -1463,7 +1441,7 @@ const faqs = ref([
   line-height: 1.25;
 }
 
-/* Panoramic Banner Setup */
+
 .lifestyle-banner {
   position: relative;
   width: 100%;
@@ -1473,7 +1451,6 @@ const faqs = ref([
   display: flex;
   align-items: flex-end;
   padding: 3rem 2.5rem;
-  /* Dark Mood Image Background fallback with rich purple tint overlay */
   background: linear-gradient(180deg, rgba(18, 3, 35, 0.4) 0%, rgba(18, 3, 35, 0.92) 100%),
               url('https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
   box-shadow: 0 20px 45px rgba(56, 10, 82, 0.2);
@@ -1489,7 +1466,7 @@ const faqs = ref([
   pointer-events: none;
 }
 
-/* 4-Item Grid Overlay */
+
 .banner-features-grid {
   position: relative;
   z-index: 2;
@@ -1532,9 +1509,7 @@ const faqs = ref([
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* ==========================================================================
-   RESPONSIVE BREAKPOINTS (Desktop, Tablet, Mobile)
-   ========================================================================== */
+
 @media (max-width: 1024px) {
   .swychpe-lifestyle-section {
     padding: 4.5rem 2rem;
@@ -1567,10 +1542,6 @@ const faqs = ref([
   }
 }
 
-
-/* ==========================================================================
-   SECTION 6: DUAL-ROW DIGITAL GIFT CARDS MARQUEE
-   ========================================================================== */
 .swychpe-giftcards-section {
   width: 100%;
   background-color: #f8f6fc;
@@ -1611,7 +1582,7 @@ const faqs = ref([
   line-height: 1.65;
 }
 
-/* Marquee Row Wrappers */
+
 .marquee-wrapper {
   width: 100%;
   overflow: hidden;
@@ -1621,7 +1592,7 @@ const faqs = ref([
 }
 
 .margin-top-row {
-  margin-top: 1.5rem; /* Gap between Row 1 and Row 2 */
+  margin-top: 1.5rem; 
 }
 
 .marquee-track {
@@ -1630,12 +1601,11 @@ const faqs = ref([
   width: max-content;
 }
 
-/* Row 1 Animation (Left) */
+
 .track-left {
   animation: scrollLeft 28s linear infinite;
 }
 
-/* Row 2 Animation (Right) */
 .track-right {
   animation: scrollRight 28s linear infinite;
 }
@@ -1644,7 +1614,7 @@ const faqs = ref([
   animation-play-state: paused;
 }
 
-/* Dual Icon + Label Tile Style */
+
 .gift-card-tile {
   background: #23083e;
   color: #ffffff;
@@ -1680,7 +1650,7 @@ const faqs = ref([
   text-align: center;
 }
 
-/* Keyframes for Two-Direction Continuous Motion */
+
 @keyframes scrollLeft {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
@@ -1691,9 +1661,7 @@ const faqs = ref([
   100% { transform: translateX(0); }
 }
 
-/* ==========================================================================
-   RESPONSIVE BREAKPOINTS
-   ========================================================================== */
+
 @media (max-width: 1024px) {
   .swychpe-giftcards-section { padding: 4.5rem 0; }
   .giftcards-header-title { font-size: 2.2rem; }
@@ -1712,9 +1680,6 @@ const faqs = ref([
 }
 
 
-/* ==========================================================================
-   SECTION 7: EXCLUSIVE CARD PRIVILEGES BANNER (From Image)
-   ========================================================================== */
 .swychpe-privileges-section {
   width: 100%;
   background-color: #ffffff;
@@ -1729,14 +1694,14 @@ const faqs = ref([
   width: 100%;
 }
 
-/* Banner Box with Curved Edges & Subtle Geometric Pattern */
+
 .privileges-banner {
   position: relative;
   width: 100%;
   border-radius: 40px;
-  background-color: #f3ebf8; /* Soft Swychr Light Purple Accent */
+  background-color: #f3ebf8;
   background-image: radial-gradient(#7B1FA2 0.75px, transparent 0.75px);
-  background-size: 16px 16px; /* Elegant geometric pattern background */
+  background-size: 16px 16px;
   padding: 4rem;
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -1746,7 +1711,7 @@ const faqs = ref([
   box-shadow: 0 15px 35px rgba(123, 31, 162, 0.08);
 }
 
-/* Interactive Plus Badge in Top Right */
+
 .plus-badge-btn {
   position: absolute;
   top: 2.5rem;
@@ -1773,7 +1738,7 @@ const faqs = ref([
   transform: rotate(90deg) scale(1.08);
 }
 
-/* Left Content Column */
+
 .privileges-content-left {
   display: flex;
   flex-direction: column;
@@ -1818,7 +1783,7 @@ const faqs = ref([
   box-shadow: 0 8px 22px rgba(123, 31, 162, 0.35);
 }
 
-/* Right Image Column */
+
 .privileges-image-wrapper {
   position: relative;
   display: flex;
@@ -1836,9 +1801,7 @@ const faqs = ref([
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
 }
 
-/* ==========================================================================
-   RESPONSIVE BREAKPOINTS (Desktop, Tablet, Mobile)
-   ========================================================================== */
+
 @media (max-width: 1024px) {
   .swychpe-privileges-section {
     padding: 4.5rem 2rem;
@@ -1906,13 +1869,9 @@ const faqs = ref([
 }
 
 
-
-/* ==========================================================================
-   SECTION 8: FREQUENTLY ASKED QUESTIONS (From Image)
-   ========================================================================== */
 .swychpe-faq-section {
   width: 100%;
-  background-color: #f8f6fc; /* Matching soft background from image */
+  background-color: #f8f6fc; 
   color: #2b083e;
   padding: 6rem 4rem;
   display: flex;
@@ -1921,7 +1880,7 @@ const faqs = ref([
 }
 
 .faq-container {
-  max-width: 900px; /* Centered clean width matching image layout */
+  max-width: 900px;
   width: 100%;
 }
 
@@ -1933,19 +1892,18 @@ const faqs = ref([
   line-height: 1.2;
 }
 
-/* Accordion Wrapper */
+
 .faq-accordion-list {
   display: flex;
   flex-direction: column;
 }
 
 .faq-item {
-  border-bottom: 1px solid #e2d7ec; /* Clean divider line matching image */
+  border-bottom: 1px solid #e2d7ec; 
   padding: 1.5rem 0;
   transition: background-color 0.25s ease;
 }
 
-/* Accordion Toggle Button */
 .faq-question-btn {
   width: 100%;
   background: transparent;
@@ -1975,7 +1933,7 @@ const faqs = ref([
 }
 
 .faq-item.is-open .toggle-badge {
-  background-color: #7B1FA2; /* Highlights purple when active */
+  background-color: #7B1FA2; 
 }
 
 .question-text {
@@ -1990,9 +1948,9 @@ const faqs = ref([
   color: #7B1FA2;
 }
 
-/* Collapsible Answer Box */
+
 .faq-answer-content {
-  padding: 1rem 0 0.5rem 4.1rem; /* Aligns neatly under question text */
+  padding: 1rem 0 0.5rem 4.1rem; 
 }
 
 .faq-answer-content p {
@@ -2003,9 +1961,6 @@ const faqs = ref([
   max-width: 780px;
 }
 
-/* ==========================================================================
-   RESPONSIVE BREAKPOINTS (Desktop, Tablet, Mobile)
-   ========================================================================== */
 @media (max-width: 1024px) {
   .swychpe-faq-section {
     padding: 4.5rem 2rem;
@@ -2050,13 +2005,9 @@ const faqs = ref([
   }
 }
 
-
-/* ==========================================================================
-   SECTION 9: APP DOWNLOAD & QR CODE BANNER (From Image)
-   ========================================================================== */
 .swychpe-appdownload-section {
   width: 100%;
-  background-color: #eef6f6; /* Light soft background matching reference */
+  background-color: #eef6f6; 
   color: #2b083e;
   padding: 6rem 4rem;
   display: flex;
@@ -2073,7 +2024,7 @@ const faqs = ref([
   align-items: center;
 }
 
-/* Left Multi-Device Graphics Container */
+
 .appdownload-mockup-wrapper {
   position: relative;
   width: 100%;
@@ -2100,7 +2051,7 @@ const faqs = ref([
   height: 380px;
 }
 
-/* Phone Mockup Frame Styling */
+
 .phone-frame {
   position: absolute;
   width: 210px;
@@ -2168,7 +2119,7 @@ const faqs = ref([
   font-size: 0.65rem;
 }
 
-/* Smartwatch Overlay Frame */
+
 .smartwatch-frame {
   position: absolute;
   bottom: 10px;
@@ -2207,7 +2158,7 @@ const faqs = ref([
   font-weight: 800;
 }
 
-/* Right Content Styling */
+
 .appdownload-content-right {
   display: flex;
   flex-direction: column;
@@ -2231,7 +2182,7 @@ const faqs = ref([
   max-width: 480px;
 }
 
-/* Store Buttons & QR Code Container */
+
 .download-actions-grid {
   display: flex;
   align-items: center;
@@ -2244,7 +2195,7 @@ const faqs = ref([
   gap: 1rem;
 }
 .store-badge-btn {
-  background: #000000; /* Solid high-contrast background */
+  background: #000000; 
   color: #ffffff;
   padding: 0.75rem 1.6rem;
   border-radius: 14px;
@@ -2263,7 +2214,7 @@ const faqs = ref([
   border-color: #7B1FA2;
 }
 
-/* Explicit SVG Icon Sizing & Visibility */
+
 .store-svg-icon {
   width: 28px;
   height: 28px;
@@ -2290,7 +2241,7 @@ const faqs = ref([
   font-weight: 700;
   color: #ffffff;
 }
-/* QR Code Display Container */
+
 .qr-code-box {
   background: #ffffff;
   padding: 1rem;
@@ -2333,9 +2284,7 @@ const faqs = ref([
   color: #5a406e;
 }
 
-/* ==========================================================================
-   RESPONSIVE BREAKPOINTS (Desktop, Tablet, Mobile)
-   ========================================================================== */
+
 @media (max-width: 1024px) {
   .swychpe-appdownload-section {
     padding: 4.5rem 2rem;

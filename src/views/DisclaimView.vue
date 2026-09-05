@@ -5,18 +5,15 @@
   <section class="disclaimer-hero-section">
     <div class="disclaimer-hero-container">
       
-      <!-- Top Section Title -->
       <h1 class="disclaimer-main-title">Disclaimer</h1>
 
-      <!-- Content Grid: Left Accent Line & Right Legal Disclosure -->
+   
       <div class="disclaimer-content-grid">
         
-        <!-- Left Horizontal Accent Line Container -->
         <div class="disclaimer-divider-column">
           <div class="purple-accent-line"></div>
         </div>
 
-        <!-- Right Corporate & Legal Disclosure Text -->
         <div class="disclaimer-text-column">
           <p class="corporate-disclosure-paragraph">
             <strong>"SwychPe"</strong> is a registered financial technology trademark owned and operated by <strong>Swychr Inc.</strong>, a licensed financial infrastructure provider. Services offered through the SwychPe application and website operate in full compliance with applicable financial regulations, cross-border payment standards, and data protection frameworks. All corporate registrations, tax identifiers, and official headquarters details for Swychr Inc. are registered under relevant banking authority guidelines.
@@ -50,9 +47,6 @@ import Footer from '@/components/Footer.vue';
   font-family: 'Montserrat', sans-serif;
 }
 
-
-
-/* Main Background Section Wrapper */
 .disclaimer-hero-section {
   width: 100%;
   background-color: #f3ecf9;
@@ -70,7 +64,7 @@ import Footer from '@/components/Footer.vue';
   flex-direction: column;
 }
 
-/* Page Title Styling */
+
 .disclaimer-main-title {
   font-size: 3.2rem;
   font-weight: 800;
@@ -79,7 +73,7 @@ import Footer from '@/components/Footer.vue';
   margin-bottom: 3.5rem;
 }
 
-/* Content Grid Layout */
+
 .disclaimer-content-grid {
   display: grid;
   grid-template-columns: 180px 1fr;
@@ -87,7 +81,7 @@ import Footer from '@/components/Footer.vue';
   align-items: flex-start;
 }
 
-/* Left Accent Line Column */
+
 .disclaimer-divider-column {
   padding-top: 0.75rem;
 }
@@ -99,7 +93,7 @@ import Footer from '@/components/Footer.vue';
   border-radius: 2px;
 }
 
-/* Right Text Column Styling */
+
 .disclaimer-text-column {
   display: flex;
   flex-direction: column;
@@ -120,9 +114,6 @@ import Footer from '@/components/Footer.vue';
   font-weight: 700;
 }
 
-/* ==========================================================================
-   RESPONSIVE STYLING (DESKTOP, TABLET, MOBILE)
-   ========================================================================== */
 @media (max-width: 992px) {
   .disclaimer-content-grid {
     grid-template-columns: 120px 1fr;

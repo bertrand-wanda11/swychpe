@@ -1,14 +1,14 @@
 <template>
   <div class="swychpe-request-wrapper">
-    <!-- Main Outer Container with SwychPe Brand Styling -->
+  
     <div class="request-card-container">
       
-      <!-- Top Right Exit / Back Button -->
+
       <router-link to="/card" class="btn-close-request" aria-label="Return to Cards">
         ✕
       </router-link>
 
-      <!-- Left Inner Dark Purple Card (App Access & QR Code) -->
+
       <div class="left-brand-card">
         <h2 class="brand-card-heading">
           Unlock SwychPe <br />
@@ -23,7 +23,7 @@
         </div>
       </div>
 
-      <!-- Right Section (Rephrased Qualification Details) -->
+      
       <div class="right-requirements-content">
         <h1 class="requirements-title">Account Verification</h1>
         <p class="requirements-intro">
@@ -60,8 +60,6 @@
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
-
-/* Full Page Wrapper with SwychPe Brand Dark Background */
 .swychpe-request-wrapper {
   width: 100%;
   min-height: 100vh;
@@ -73,7 +71,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-/* Outer Soft Lilac Container */
+
 .request-card-container {
   background-color: #f3ecf9;
   width: 100%;
@@ -87,7 +85,7 @@
   box-shadow: 0 30px 65px rgba(0, 0, 0, 0.45);
 }
 
-/* Close Button with SwychPe Hover Glow */
+
 .btn-close-request {
   position: absolute;
   top: 24px;
@@ -112,7 +110,7 @@
   transform: rotate(90deg);
 }
 
-/* Left Inner Dark Purple Card */
+
 .left-brand-card {
   background: linear-gradient(160deg, #2b083e 0%, #10021c 100%);
   border-radius: 32px;
@@ -167,7 +165,7 @@
   color: rgba(255, 255, 255, 0.75);
 }
 
-/* Right Content Area */
+
 .right-requirements-content {
   display: flex;
   flex-direction: column;
@@ -191,7 +189,7 @@
   margin-bottom: 2rem;
 }
 
-/* Checklist Styling */
+
 .requirements-checklist {
   list-style: none;
   padding: 0;
@@ -217,9 +215,7 @@
   font-weight: 900;
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN (DESKTOP, TABLET, MOBILE)
-   ========================================================================== */
+
 @media (max-width: 900px) {
   .request-card-container {
     grid-template-columns: 1fr;

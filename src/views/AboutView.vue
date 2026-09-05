@@ -4,18 +4,15 @@
     <section class="about-hero-section">
     <div class="about-hero-container">
       
-      <!-- Top Section Title -->
       <h1 class="about-main-title">About SwychPe</h1>
 
-      <!-- Content Grid: Left Accent Line & Right Narrative -->
+     
       <div class="about-content-grid">
         
-        <!-- Left Horizontal Accent Line Container -->
         <div class="about-divider-column">
           <div class="purple-accent-line"></div>
         </div>
 
-        <!-- Right Body Text Column -->
         <div class="about-text-column">
           <p class="trademark-notice">
             SwychPe is a registered financial technology brand operating under Swychr.
@@ -65,8 +62,6 @@ import Footer from '@/components/Footer.vue';
 }
 
 
-
-/* Main Background Section Wrapper */
 .about-hero-section {
   width: 100%;
   background-color: #f3ecf9;
@@ -84,7 +79,7 @@ import Footer from '@/components/Footer.vue';
   flex-direction: column;
 }
 
-/* Page Title Styling */
+
 .about-main-title {
   font-size: 3.2rem;
   font-weight: 800;
@@ -93,7 +88,7 @@ import Footer from '@/components/Footer.vue';
   margin-bottom: 3.5rem;
 }
 
-/* Content Grid Layout */
+
 .about-content-grid {
   display: grid;
   grid-template-columns: 180px 1fr;
@@ -101,7 +96,7 @@ import Footer from '@/components/Footer.vue';
   align-items: flex-start;
 }
 
-/* Left Accent Line */
+
 .about-divider-column {
   padding-top: 0.75rem;
 }
@@ -113,7 +108,7 @@ import Footer from '@/components/Footer.vue';
   border-radius: 2px;
 }
 
-/* Right Text Column Styling */
+
 .about-text-column {
   display: flex;
   flex-direction: column;
@@ -145,9 +140,7 @@ import Footer from '@/components/Footer.vue';
   margin-top: 0.5rem;
 }
 
-/* ==========================================================================
-   RESPONSIVE STYLING (DESKTOP, TABLET, MOBILE)
-   ========================================================================== */
+
 @media (max-width: 992px) {
   .about-content-grid {
     grid-template-columns: 120px 1fr;

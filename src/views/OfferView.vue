@@ -19,7 +19,7 @@
           Apply now
         </router-link>
 
-        <!-- Carousel / Slider Dots -->
+     
         <div class="carousel-dots">
           <span class="dot active"></span>
           <span class="dot"></span>
@@ -28,10 +28,10 @@
         </div>
       </div>
 
-      <!-- Right Visual Column (Floating Cards + Starburst) -->
+    
       <div class="offers-visual-column">
         
-        <!-- Background Starburst SVG Graphic -->
+   
         <div class="starburst-bg">
           <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M200 0L220 180L400 200L220 220L200 400L180 220L0 200L180 180L200 0Z" fill="url(#purpleGlow)" opacity="0.35"/>
@@ -45,10 +45,9 @@
           </svg>
         </div>
 
-        <!-- Floating Cards Container -->
         <div class="floating-cards-wrapper">
           
-          <!-- Primary Dark Purple Card -->
+         
           <div class="swychr-card card-front">
             <div class="card-header">
               <span class="card-tier">WORLD DEBIT</span>
@@ -64,7 +63,7 @@
             </div>
           </div>
 
-          <!-- Secondary Light Purple Card (Tilted Behind) -->
+        
           <div class="swychr-card card-back">
             <div class="card-header">
               <span class="card-tier">PLATINUM DEBIT</span>
@@ -82,7 +81,6 @@
 
         </div>
 
-        <!-- Circular Slider Navigation Arrows -->
         <div class="slider-controls">
           <button class="arrow-btn" aria-label="Next Offer">
             <span>›</span>
@@ -101,7 +99,7 @@
 <section class="offers-grid-section">
     <div class="offers-grid-container">
       
-      <!-- Top Category Filter Tabs -->
+   
       <div class="offers-filter-tabs">
         <button 
           v-for="tab in tabs" 
@@ -113,19 +111,19 @@
         </button>
       </div>
 
-      <!-- 3x3 Offers Grid -->
+  
       <div class="offers-cards-grid">
         <div 
           v-for="offer in filteredOffers" 
           :key="offer.id" 
           class="offer-card"
         >
-          <!-- Top White Partner Logo Badge -->
+       
           <div class="partner-logo-container">
             <span class="partner-logo-text">{{ offer.partnerName }}</span>
           </div>
 
-          <!-- Card Content Body -->
+       
           <div class="offer-card-body">
             <h3 class="offer-card-title">{{ offer.title }}</h3>
             
@@ -136,7 +134,7 @@
         </div>
       </div>
 
-      <!-- Bottom Pagination Bar -->
+  
       <div class="offers-pagination">
         <button class="pag-nav-btn" :disabled="currentPage === 1" @click="currentPage--">Prev</button>
         
@@ -177,7 +175,7 @@ const tabs = [
   { id: 'prepaid', label: 'Prepaid Cards' }
 ]
 
-// Rephrased SwychPe Partner Offers
+
 const allOffers = ref([
   {
     id: 1,
@@ -223,7 +221,7 @@ const allOffers = ref([
   },
   {
     id: 7,
-    category: 'prepaid', // also available for debit
+    category: 'prepaid',
     partnerName: 'Rentalcars.com',
     title: 'Rentalcars.com 10% Off Your Booking',
     link: '/learn'
@@ -262,7 +260,7 @@ const filteredOffers = computed(() => {
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
 }
-/* Main Offers Section Wrapper */
+
 .offers-hero {
   width: 100%;
   min-height: 85vh;
@@ -286,7 +284,7 @@ const filteredOffers = computed(() => {
   gap: 4rem;
 }
 
-/* Left Content Column */
+
 .offers-text-column {
   display: flex;
   flex-direction: column;
@@ -323,7 +321,7 @@ const filteredOffers = computed(() => {
   color: #ffffff;
 }
 
-/* Apply Now CTA Button */
+
 .btn-offers-apply {
   background-color: #E1BEE7;
   color: #150324;
@@ -347,7 +345,7 @@ const filteredOffers = computed(() => {
   box-shadow: 0 12px 30px rgba(255, 255, 255, 0.35);
 }
 
-/* Carousel Dots */
+
 .carousel-dots {
   display: flex;
   align-items: center;
@@ -369,7 +367,7 @@ const filteredOffers = computed(() => {
   height: 10px;
 }
 
-/* Right Visual Column */
+
 .offers-visual-column {
   position: relative;
   display: flex;
@@ -389,7 +387,7 @@ const filteredOffers = computed(() => {
   z-index: 1;
 }
 
-/* Card Stacking & Styling */
+
 .floating-cards-wrapper {
   position: relative;
   width: 320px;
@@ -410,7 +408,7 @@ const filteredOffers = computed(() => {
   transition: all 0.4s ease;
 }
 
-/* Front Card (Primary Brand Dark) */
+
 .card-front {
   background: linear-gradient(145deg, #2b083e 0%, #150324 100%);
   border: 1px solid rgba(225, 190, 231, 0.3);
@@ -424,7 +422,7 @@ const filteredOffers = computed(() => {
   transform: rotate(-5deg) scale(1.03);
 }
 
-/* Back Card (Tilted Behind) */
+
 .card-back {
   background: linear-gradient(145deg, #1f0436 0%, #0d0117 100%);
   border: 1px solid rgba(123, 31, 162, 0.4);
@@ -497,7 +495,7 @@ const filteredOffers = computed(() => {
   color: rgba(255, 255, 255, 0.85);
 }
 
-/* Circular Slider Arrows */
+
 .slider-controls {
   position: absolute;
   bottom: 0px;
@@ -530,9 +528,7 @@ const filteredOffers = computed(() => {
   transform: scale(1.08);
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN (DESKTOP, TABLET, MOBILE)
-   ========================================================================== */
+
 @media (max-width: 1024px) {
   .offers-hero-container {
     grid-template-columns: 1fr;
@@ -616,7 +612,7 @@ const filteredOffers = computed(() => {
   align-items: center;
 }
 
-/* Category Filter Tabs Header */
+
 .offers-filter-tabs {
   display: flex;
   align-items: center;
@@ -651,7 +647,7 @@ const filteredOffers = computed(() => {
   font-weight: 700;
 }
 
-/* Active Underline Indicator */
+
 .filter-tab-btn.active::after {
   content: '';
   position: absolute;
@@ -663,7 +659,7 @@ const filteredOffers = computed(() => {
   border-radius: 2px;
 }
 
-/* 3x3 Grid Matrix Layout */
+
 .offers-cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -672,7 +668,7 @@ const filteredOffers = computed(() => {
   margin-bottom: 4rem;
 }
 
-/* Individual Dark Purple Card Container */
+
 .offer-card {
   background: linear-gradient(160deg, #2b083e 0%, #150324 100%);
   border-radius: 24px;
@@ -692,7 +688,7 @@ const filteredOffers = computed(() => {
   border-color: #E1BEE7;
 }
 
-/* Top Rounded White Partner Logo Header */
+
 .partner-logo-container {
   background-color: #ffffff;
   border-radius: 16px;
@@ -712,7 +708,7 @@ const filteredOffers = computed(() => {
   letter-spacing: -0.2px;
 }
 
-/* Card Body Content */
+
 .offer-card-body {
   display: flex;
   flex-direction: column;
@@ -744,7 +740,7 @@ const filteredOffers = computed(() => {
   color: #ffffff;
 }
 
-/* Pagination Bar Controls */
+
 .offers-pagination {
   display: flex;
   align-items: center;
@@ -800,9 +796,7 @@ const filteredOffers = computed(() => {
   color: #ffffff;
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN (DESKTOP, TABLET, MOBILE)
-   ========================================================================== */
+
 @media (max-width: 992px) {
   .offers-cards-grid {
     grid-template-columns: repeat(2, 1fr);

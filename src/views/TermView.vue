@@ -3,8 +3,7 @@
     <Navbar />
 <section class="terms-hero-section">
     <div class="terms-hero-container">
-      
-      <!-- Top Banner Box -->
+
       <div class="terms-banner-box">
         <h1 class="terms-banner-title">Terms and Conditions</h1>
         
@@ -15,10 +14,10 @@
         </div>
       </div>
 
-      <!-- Main Layout: Sticky Navigation Sidebar + Complete Content -->
+    
       <div class="terms-body-grid">
         
-        <!-- Left Sidebar Navigation -->
+      
         <aside class="terms-sidebar-column">
           <div class="sidebar-sticky-box">
             <button 
@@ -32,10 +31,10 @@
           </div>
         </aside>
 
-        <!-- Right Legal Document Content -->
+   
         <main class="terms-content-column">
           
-          <!-- TAB 1: COMPLETE TERMS & CONDITIONS -->
+        
           <div v-if="activeTab === 'terms'" class="legal-document-body">
             
             <ol class="terms-ordered-list">
@@ -100,7 +99,6 @@
 
           </div>
 
-          <!-- TAB 2: PREPAID CARD AGREEMENT -->
           <div v-else-if="activeTab === 'prepaid'" class="legal-document-body">
             <h2 class="sub-doc-title">Prepaid Card Agreement</h2>
             <p class="narrative-paragraph">
@@ -111,7 +109,7 @@
             </p>
           </div>
 
-          <!-- TAB 3: PRIVACY POLICY -->
+       
           <div v-else-if="activeTab === 'privacy'" class="legal-document-body">
             <h2 class="sub-doc-title">Privacy Policy</h2>
             <p class="narrative-paragraph">
@@ -161,7 +159,7 @@ const navigationTabs = [
 
 
 
-/* Main Background Outer Wrapper */
+
 .terms-hero-section {
   width: 100%;
   background-color: #f3ecf9;
@@ -179,7 +177,7 @@ const navigationTabs = [
   flex-direction: column;
 }
 
-/* Top Banner Header Box */
+
 .terms-banner-box {
   width: 100%;
   background-color: rgba(225, 190, 231, 0.45);
@@ -212,7 +210,7 @@ const navigationTabs = [
   z-index: 1;
 }
 
-/* Two-Column Grid Layout */
+
 .terms-body-grid {
   display: grid;
   grid-template-columns: 260px 1fr;
@@ -220,7 +218,7 @@ const navigationTabs = [
   align-items: flex-start;
 }
 
-/* Left Sidebar Sticky Styling */
+
 .terms-sidebar-column {
   width: 100%;
 }
@@ -253,7 +251,7 @@ const navigationTabs = [
   border-color: #7B1FA2;
 }
 
-/* Swychr Active Pill Theme */
+
 .sidebar-nav-pill.active {
   background: linear-gradient(145deg, #2b083e 0%, #150324 100%);
   color: #ffffff;
@@ -261,7 +259,7 @@ const navigationTabs = [
   box-shadow: 0 8px 20px rgba(21, 3, 36, 0.2);
 }
 
-/* Right Content Column */
+
 .terms-content-column {
   display: flex;
   flex-direction: column;
@@ -313,9 +311,7 @@ const navigationTabs = [
   margin-bottom: 1.25rem;
 }
 
-/* ==========================================================================
-   RESPONSIVE STYLING (DESKTOP, TABLET, MOBILE)
-   ========================================================================== */
+
 @media (max-width: 992px) {
   .terms-body-grid {
     grid-template-columns: 220px 1fr;

@@ -4,7 +4,7 @@
   <section class="partners-hero">
     <div class="partners-hero-container">
       
-      <!-- Left Hero Content Column -->
+     
       <div class="partners-text-column">
         <h1 class="partners-title">Grow with SwychPe</h1>
         <p class="partners-subtitle">
@@ -12,10 +12,10 @@
         </p>
       </div>
 
-      <!-- Right Visual Column (3D Phone Mockup + Floating Elements) -->
+ 
       <div class="partners-visual-column">
         
-        <!-- Background Radial Pattern Graphic -->
+
         <div class="pattern-bg">
           <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="200" cy="200" r="180" stroke="url(#purplePattern)" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.4"/>
@@ -29,7 +29,7 @@
           </svg>
         </div>
 
-        <!-- 3D Mobile Phone Frame -->
+   
         <div class="phone-mockup-wrapper">
           <div class="phone-screen">
             <div class="phone-notch"></div>
@@ -40,7 +40,7 @@
           </div>
         </div>
 
-        <!-- Floating 3D Financial Badges & Tokens -->
+   
         <div class="floating-badge badge-top-left">
           <span>⚡</span>
         </div>
@@ -63,10 +63,9 @@
   <section class="partners-benefits-section">
     <div class="partners-benefits-container">
       
-      <!-- TOP BLOCK: Why Partner with SwychPe? -->
+     
       <div class="why-partner-block">
-        
-        <!-- Left Header Column -->
+
         <div class="why-header-column">
           <h2 class="section-title">Why Partner with SwychPe?</h2>
           <p class="section-subtitle">
@@ -74,13 +73,13 @@
           </p>
         </div>
 
-        <!-- Right Feature Cards Column (2 Tall Rounded Cards) -->
+      
         <div class="why-cards-column">
           
-          <!-- Card 1: Wider Reach -->
+        
           <div class="feature-card-light">
             <div class="feature-icon-wrapper">
-              <!-- Illustrative Graphic Container -->
+         
               <div class="icon-graphic graphic-reach">
                 <span class="user-avatar">👤</span>
                 <div class="mini-app-window">
@@ -94,10 +93,10 @@
             </p>
           </div>
 
-          <!-- Card 2: Flexible Solutions -->
+        
           <div class="feature-card-light">
             <div class="feature-icon-wrapper">
-              <!-- API 3D Gear Graphic Container -->
+        
               <div class="icon-graphic graphic-api">
                 <div class="api-gear">
                   <span class="api-badge">API</span>
@@ -114,14 +113,14 @@
 
       </div>
 
-      <!-- BOTTOM BLOCK: Partnership Benefits -->
+     
       <div class="benefits-grid-block">
         <h2 class="benefits-main-title">Partnership Benefits</h2>
 
-        <!-- 4 Dark Rounded Cards Grid -->
+     
         <div class="benefits-cards-grid">
           
-          <!-- Benefit 1 -->
+      
           <div class="benefit-card-dark">
             <div class="benefit-icon">
               <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -136,7 +135,7 @@
             </p>
           </div>
 
-          <!-- Benefit 2 -->
+     
           <div class="benefit-card-dark">
             <div class="benefit-icon">
               <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -150,7 +149,7 @@
             </p>
           </div>
 
-          <!-- Benefit 3 -->
+       
           <div class="benefit-card-dark">
             <div class="benefit-icon">
               <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -164,7 +163,6 @@
             </p>
           </div>
 
-          <!-- Benefit 4 -->
           <div class="benefit-card-dark">
             <div class="benefit-icon">
               <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -191,10 +189,10 @@
       
       <h2 class="section-heading">Our Global Partners</h2>
 
-      <!-- Infinite Marquee Ticker Container -->
+
       <div class="ticker-wrapper">
         
-        <!-- Row 1: Scrolling Left -->
+    
         <div class="ticker-row ticker-left">
           <div class="ticker-track">
             <div 
@@ -203,7 +201,7 @@
               class="partner-logo-card"
             >
               <div class="logo-box">
-                <!-- Inline SVG Brand Icon -->
+           
                 <svg class="partner-svg-icon" viewBox="0 0 24 24" fill="currentColor" v-html="partner.icon"></svg>
                 <span class="logo-brand-name">{{ partner.name }}</span>
               </div>
@@ -211,7 +209,7 @@
           </div>
         </div>
 
-        <!-- Row 2: Scrolling Right -->
+
         <div class="ticker-row ticker-right">
           <div class="ticker-track">
             <div 
@@ -220,7 +218,7 @@
               class="partner-logo-card"
             >
               <div class="logo-box">
-                <!-- Inline SVG Brand Icon -->
+              
                 <svg class="partner-svg-icon" viewBox="0 0 24 24" fill="currentColor" v-html="partner.icon"></svg>
                 <span class="logo-brand-name">{{ partner.name }}</span>
               </div>
@@ -237,7 +235,7 @@
   <section class="become-partner-section">
     <div class="become-partner-container">
       
-      <!-- Top Section Header -->
+
       <div class="form-header-text">
         <h2 class="form-title">Become a Partner</h2>
         <p class="form-subtitle">
@@ -245,11 +243,11 @@
         </p>
       </div>
 
-      <!-- Main Form Container Card -->
+
       <div class="partner-form-card">
         <form @submit.prevent="handleSubmit" class="partner-form">
           
-          <!-- Field 1: Account Type Dropdown -->
+         
           <div class="form-group full-width">
             <label class="input-label">Account Type *</label>
             <div class="select-wrapper">
@@ -263,7 +261,7 @@
             </div>
           </div>
 
-          <!-- Field 2: Company Name -->
+
           <div class="form-group full-width">
             <label class="input-label">Company Name *</label>
             <input 
@@ -275,7 +273,7 @@
             />
           </div>
 
-          <!-- Field 3 & 4: Number of Outlets & Registration Number -->
+   
           <div class="form-row">
             <div class="form-group">
               <label class="input-label">Number of Outlets / Branches *</label>
@@ -298,7 +296,7 @@
             </div>
           </div>
 
-          <!-- Field 5 & 6: Phone & Email -->
+     
           <div class="form-row">
             <div class="form-group">
               <label class="input-label">Business Mobile Number *</label>
@@ -322,7 +320,7 @@
             </div>
           </div>
 
-          <!-- Field 7: Head Office Address -->
+  
           <div class="form-group full-width">
             <label class="input-label">Headquarters Physical Address</label>
             <input 
@@ -333,7 +331,7 @@
             />
           </div>
 
-          <!-- File Upload Row: Company Profile & Supplemental Documents -->
+       
           <div class="form-row upload-row">
             <div class="form-group">
               <label class="input-label">Company Profile Document</label>
@@ -357,7 +355,6 @@
             </div>
           </div>
 
-          <!-- Checkbox Section: Type of Collaboration -->
           <div class="collaboration-section">
             <label class="section-subheading">Type of Collaboration *</label>
             
@@ -414,7 +411,7 @@
             </div>
           </div>
 
-          <!-- Terms Agreement Checkbox -->
+      
           <div class="terms-agree-group">
             <label class="terms-checkbox-label">
               <input type="checkbox" v-model="form.agreedTerms" required />
@@ -440,7 +437,7 @@
   <section class="partner-support-section">
     <div class="partner-support-container">
       
-      <!-- Section Header -->
+
       <div class="support-header-text">
         <h2 class="support-title">Share your questions with us</h2>
         <p class="support-subtitle">
@@ -448,10 +445,10 @@
         </p>
       </div>
 
-      <!-- Top Row: 3 Equal Dark Cards -->
+  
       <div class="support-cards-grid">
         
-        <!-- Card 1: Phone Support -->
+      
         <div class="support-card">
           <div class="card-icon-wrapper">
             <div class="icon-glow">
@@ -465,7 +462,6 @@
           </a>
         </div>
 
-        <!-- Card 2: Email Support -->
         <div class="support-card">
           <div class="card-icon-wrapper">
             <div class="icon-glow">
@@ -479,7 +475,7 @@
           </a>
         </div>
 
-        <!-- Card 3: Locations & Outlets -->
+   
         <div class="support-card">
           <div class="card-icon-wrapper">
             <div class="icon-glow">
@@ -494,7 +490,7 @@
 
       </div>
 
-      <!-- Bottom Row: 1 Full-Width Dark Banner Card -->
+ 
       <div class="support-card-wide">
         <div class="card-icon-wrapper">
           <div class="icon-glow">
@@ -559,7 +555,7 @@ const row1Partners = [
   }
 ]
 
-// Row 2 Partners with inline SVG paths
+
 const row2Partners = [
   { 
     name: 'Roblox', 
@@ -599,7 +595,7 @@ const row2Partners = [
   }
 ]
 
-// Tripled lists to ensure smooth continuous marquee loops
+
 const doubledRow1 = computed(() => [...row1Partners, ...row1Partners, ...row1Partners])
 const doubledRow2 = computed(() => [...row2Partners, ...row2Partners, ...row2Partners])
 
@@ -666,7 +662,6 @@ const handleSubmit = () => {
   gap: 4rem;
 }
 
-/* Left Hero Text Column */
 .partners-text-column {
   display: flex;
   flex-direction: column;
@@ -690,7 +685,7 @@ const handleSubmit = () => {
   max-width: 500px;
 }
 
-/* Right Visual Column */
+
 .partners-visual-column {
   position: relative;
   display: flex;
@@ -699,7 +694,7 @@ const handleSubmit = () => {
   min-height: 450px;
 }
 
-/* Background Circular Pattern */
+
 .pattern-bg {
   position: absolute;
   width: 480px;
@@ -711,7 +706,7 @@ const handleSubmit = () => {
   z-index: 1;
 }
 
-/* 3D Smartphone Frame Container */
+
 .phone-mockup-wrapper {
   position: relative;
   width: 220px;
@@ -770,7 +765,7 @@ const handleSubmit = () => {
   color: #ffffff;
 }
 
-/* Floating Elements (Badges & Tokens) */
+
 .floating-badge, .floating-token {
   position: absolute;
   z-index: 4;
@@ -804,9 +799,7 @@ const handleSubmit = () => {
 .badge-bottom-left { bottom: 30px; left: 40px; transform: rotate(-20deg); }
 .badge-bottom-right { bottom: 60px; right: 70px; transform: rotate(15deg); }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN (DESKTOP, TABLET, MOBILE)
-   ========================================================================== */
+
 @media (max-width: 1024px) {
   .partners-hero-container {
     grid-template-columns: 1fr;
@@ -877,9 +870,7 @@ const handleSubmit = () => {
   gap: 6rem;
 }
 
-/* ==========================================================================
-   TOP BLOCK: WHY PARTNER WITH SWYCHPE
-   ========================================================================== */
+
 .why-partner-block {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
@@ -909,7 +900,7 @@ const handleSubmit = () => {
   max-width: 440px;
 }
 
-/* 2 Tall Light Feature Cards */
+
 .why-cards-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -946,7 +937,7 @@ const handleSubmit = () => {
   margin-bottom: 1.5rem;
 }
 
-/* Custom 3D Graphics inside Light Cards */
+
 .icon-graphic {
   position: relative;
   display: flex;
@@ -1027,9 +1018,8 @@ const handleSubmit = () => {
   line-height: 1.6;
 }
 
-/* ==========================================================================
-   BOTTOM BLOCK: PARTNERSHIP BENEFITS
-   ========================================================================== */
+
+
 .benefits-grid-block {
   display: flex;
   flex-direction: column;
@@ -1094,9 +1084,7 @@ const handleSubmit = () => {
   line-height: 1.6;
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN (DESKTOP, TABLET, MOBILE)
-   ========================================================================== */
+
 @media (max-width: 1024px) {
   .why-partner-block {
     grid-template-columns: 1fr;
@@ -1152,8 +1140,6 @@ const handleSubmit = () => {
   }
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
-
-/* Main Light Background Section */
 .partners-logos-section {
   width: 100%;
   background-color: #f3ecf9;
@@ -1172,7 +1158,7 @@ const handleSubmit = () => {
   align-items: center;
 }
 
-/* Heading */
+
 .section-heading {
   font-size: 2.4rem;
   font-weight: 800;
@@ -1182,7 +1168,7 @@ const handleSubmit = () => {
   letter-spacing: -0.5px;
 }
 
-/* Marquee Wrapper */
+
 .ticker-wrapper {
   width: 100%;
   display: flex;
@@ -1191,7 +1177,7 @@ const handleSubmit = () => {
   position: relative;
 }
 
-/* Side Gradients for Smooth In/Out Fading */
+
 .ticker-wrapper::before,
 .ticker-wrapper::after {
   content: '';
@@ -1238,9 +1224,7 @@ const handleSubmit = () => {
   animation-play-state: paused;
 }
 
-/* ==========================================================================
-   SWYCHR BRAND FLOATING CARD CONTAINERS & HIGH-CONTRAST ICONS
-   ========================================================================== */
+
 .partner-logo-card {
   background: linear-gradient(160deg, #2b083e 0%, #150324 100%) !important;
   border-radius: 20px;
@@ -1271,13 +1255,13 @@ const handleSubmit = () => {
   width: 100%;
 }
 
-/* Bright Lilac/White High-Contrast Icon Styling */
+
 .partner-svg-icon {
   width: 26px !important;
   height: 26px !important;
   min-width: 26px;
   min-height: 26px;
-  color: #E1BEE7 !important; /* Swychr Accent Lilac */
+  color: #E1BEE7 !important; 
   fill: currentColor !important;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
   transition: transform 0.3s ease, color 0.3s ease;
@@ -1296,7 +1280,6 @@ const handleSubmit = () => {
   white-space: nowrap;
 }
 
-/* Animation Keyframes */
 @keyframes scrollLeft {
   0% { transform: translateX(0); }
   100% { transform: translateX(-33.333%); }
@@ -1307,7 +1290,6 @@ const handleSubmit = () => {
   100% { transform: translateX(0); }
 }
 
-/* Responsive Media Queries */
 @media (max-width: 992px) {
   .section-heading {
     font-size: 2rem;
@@ -1376,7 +1358,7 @@ const handleSubmit = () => {
   align-items: center;
 }
 
-/* Header Text */
+
 .form-header-text {
   text-align: center;
   margin-bottom: 3rem;
@@ -1398,7 +1380,7 @@ const handleSubmit = () => {
   line-height: 1.6;
 }
 
-/* Swychr Brand Dark Purple Form Card */
+
 .partner-form-card {
   width: 100%;
   background: linear-gradient(160deg, #2b083e 0%, #150324 100%);
@@ -1414,7 +1396,7 @@ const handleSubmit = () => {
   gap: 2rem;
 }
 
-/* Grid Layout Rows */
+
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1439,7 +1421,7 @@ const handleSubmit = () => {
   letter-spacing: 0.2px;
 }
 
-/* Minimalist Underline Inputs */
+
 .form-input {
   width: 100%;
   background: transparent;
@@ -1463,7 +1445,7 @@ const handleSubmit = () => {
   border-bottom-color: #E1BEE7;
 }
 
-/* Custom Select Dropdown Styling */
+
 .select-wrapper {
   position: relative;
   width: 100%;
@@ -1489,7 +1471,7 @@ const handleSubmit = () => {
   pointer-events: none;
 }
 
-/* File Upload Attachment Inputs */
+
 .upload-row {
   margin-top: 0.5rem;
 }
@@ -1530,7 +1512,7 @@ const handleSubmit = () => {
   font-size: 1.1rem;
 }
 
-/* Collaboration Checkboxes Block */
+
 .collaboration-section {
   margin-top: 1rem;
   display: flex;
@@ -1612,7 +1594,7 @@ const handleSubmit = () => {
   color: #ffffff;
 }
 
-/* Terms Agreement Checkbox */
+
 .terms-agree-group {
   margin-top: 0.5rem;
 }
@@ -1630,7 +1612,7 @@ const handleSubmit = () => {
   color: #E1BEE7;
 }
 
-/* Centered CTA Submit Button */
+
 .form-submit-row {
   display: flex;
   justify-content: center;
@@ -1657,9 +1639,7 @@ const handleSubmit = () => {
   box-shadow: 0 12px 30px rgba(255, 255, 255, 0.35);
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN (DESKTOP, TABLET, MOBILE)
-   ========================================================================== */
+
 @media (max-width: 992px) {
   .checkbox-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1698,7 +1678,7 @@ const handleSubmit = () => {
   }
 } 
 
-/* Main Background Outer Wrapper */
+
 .partner-support-section {
   width: 100%;
   background-color: #f3ecf9;
@@ -1717,7 +1697,6 @@ const handleSubmit = () => {
   gap: 2rem;
 }
 
-/* Header Text Styling */
 .support-header-text {
   text-align: left;
   margin-bottom: 1.5rem;
@@ -1738,7 +1717,7 @@ const handleSubmit = () => {
   line-height: 1.6;
 }
 
-/* Top 3-Card Grid */
+
 .support-cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1746,7 +1725,7 @@ const handleSubmit = () => {
   width: 100%;
 }
 
-/* Individual Dark Purple Card */
+
 .support-card {
   background: linear-gradient(160deg, #2b083e 0%, #150324 100%);
   border-radius: 28px;
@@ -1767,7 +1746,7 @@ const handleSubmit = () => {
   box-shadow: 0 20px 45px rgba(123, 31, 162, 0.28);
 }
 
-/* Bottom Full-Width Card */
+
 .support-card-wide {
   background: linear-gradient(160deg, #2b083e 0%, #150324 100%);
   border-radius: 28px;
@@ -1789,7 +1768,7 @@ const handleSubmit = () => {
   box-shadow: 0 20px 45px rgba(123, 31, 162, 0.28);
 }
 
-/* Icon Graphics Styling */
+
 .card-icon-wrapper {
   margin-bottom: 1.25rem;
   display: flex;
@@ -1812,7 +1791,7 @@ const handleSubmit = () => {
   font-size: 1.4rem;
 }
 
-/* Card Heading Text */
+
 .card-label {
   font-size: 1.1rem;
   font-weight: 700;
@@ -1820,7 +1799,7 @@ const handleSubmit = () => {
   margin-bottom: 1.5rem;
 }
 
-/* Pill-Shaped Outline Action Buttons */
+
 .btn-pill-outline {
   display: inline-flex;
   align-items: center;
@@ -1848,9 +1827,7 @@ const handleSubmit = () => {
   font-size: 0.85rem;
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN (DESKTOP, TABLET, MOBILE)
-   ========================================================================== */
+
 @media (max-width: 992px) {
   .support-cards-grid {
     grid-template-columns: repeat(2, 1fr);

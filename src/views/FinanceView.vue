@@ -4,14 +4,14 @@
 <section class="pricing-fees-section">
     <div class="pricing-fees-container">
       
-      <!-- Top Section Header & Disclaimers -->
+     
       <div class="pricing-header-text">
         <h1 class="pricing-title">Banking Fees and Charges</h1>
         <p class="pricing-vat-text">All listed fees are exclusive of applicable VAT.</p>
         <p class="pricing-effective-date">These schedule fees are effective starting from February 20, 2026.</p>
       </div>
 
-      <!-- Main Dark Pricing Table Wrapper -->
+
       <div class="table-responsive-wrapper">
         <table class="swychr-pricing-table">
           <thead>
@@ -23,7 +23,7 @@
           </thead>
           <tbody>
             
-            <!-- Category 1: Accounts -->
+        
             <tr>
               <td class="category-cell" rowspan="2">Accounts</td>
               <td class="desc-cell">Account Opening</td>
@@ -34,7 +34,7 @@
               <td class="fee-cell highlight-free">Free</td>
             </tr>
 
-            <!-- Category 2: Standing Orders Fees -->
+    
             <tr>
               <td class="category-cell" rowspan="5">Standing Orders Fees</td>
               <td class="desc-cell">Standing Orders Setup & Execution</td>
@@ -57,7 +57,7 @@
               <td class="fee-cell highlight-free">Free</td>
             </tr>
 
-            <!-- Category 3: Transfers -->
+   
             <tr>
               <td class="category-cell" rowspan="6">Transfers</td>
               <td class="desc-cell">Domestic transfer under 25,000 FCFA equivalent</td>
@@ -84,7 +84,7 @@
               <td class="fee-cell">Max 5,000 FCFA</td>
             </tr>
 
-            <!-- Category 4: Documents -->
+       
             <tr>
               <td class="category-cell" rowspan="4">Documents</td>
               <td class="desc-cell">Issuance of Account Confirmation Certificate</td>
@@ -103,7 +103,7 @@
               <td class="fee-cell highlight-free">Free</td>
             </tr>
 
-            <!-- Category 5: SwychPe Cards -->
+           
             <tr>
               <td class="category-cell" rowspan="7">SwychPe Cards</td>
               <td class="desc-cell">Issuance / Renewal of Platinum Card</td>
@@ -134,21 +134,19 @@
               <td class="fee-cell">2% of transaction amount</td>
             </tr>
 
-            <!-- Category 6: Personal Finance Products -->
+        
             <tr>
               <td class="category-cell">Personal Finance</td>
               <td class="desc-cell">Administrative fees, Annual Percentage Rate (APR), and VAT included</td>
               <td class="fee-cell">0.50% of financing amount</td>
             </tr>
 
-            <!-- Category 7: Payments -->
             <tr>
               <td class="category-cell">Payments</td>
               <td class="desc-cell">Utility Bills & Merchant Payments</td>
               <td class="fee-cell highlight-free">Free</td>
             </tr>
 
-            <!-- Category 8: Buy/Sell Foreign Currency -->
             <tr>
               <td class="category-cell">FX Currency Exchange</td>
               <td class="desc-cell">Foreign Exchange Board Rate</td>
@@ -159,7 +157,7 @@
         </table>
       </div>
 
-      <!-- Bottom Footnote Notes -->
+
       <div class="pricing-footnotes">
         <ul>
           <li>In the event that a transaction is proven to be wrongly charged, SwychPe shall waive or refund the full fees.</li>
@@ -199,7 +197,6 @@ import Footer from '@/components/Footer.vue';
 }
 
 
-/* Main Background Section Wrapper */
 .pricing-fees-section {
   width: 100%;
   background-color: #f3ecf9;
@@ -217,7 +214,7 @@ import Footer from '@/components/Footer.vue';
   flex-direction: column;
 }
 
-/* Header Text Styling */
+
 .pricing-header-text {
   margin-bottom: 2.5rem;
   text-align: left;
@@ -244,7 +241,7 @@ import Footer from '@/components/Footer.vue';
   color: #5c4468;
 }
 
-/* Responsive Table Scroll Container */
+
 .table-responsive-wrapper {
   width: 100%;
   overflow-x: auto;
@@ -254,7 +251,7 @@ import Footer from '@/components/Footer.vue';
   border: 1px solid rgba(123, 31, 162, 0.25);
 }
 
-/* Swychr Dark Table Container */
+
 .swychr-pricing-table {
   width: 100%;
   border-collapse: collapse;
@@ -264,7 +261,7 @@ import Footer from '@/components/Footer.vue';
   min-width: 750px;
 }
 
-/* Table Header */
+
 .swychr-pricing-table thead tr {
   background-color: #10021c;
   border-bottom: 2px solid rgba(225, 190, 231, 0.2);
@@ -283,7 +280,7 @@ import Footer from '@/components/Footer.vue';
 .col-description { width: 55%; }
 .col-fee { width: 20%; }
 
-/* Table Body Cells */
+
 .swychr-pricing-table td {
   padding: 1.1rem 1.5rem;
   font-size: 0.9rem;
@@ -296,7 +293,7 @@ import Footer from '@/components/Footer.vue';
   background-color: rgba(123, 31, 162, 0.15);
 }
 
-/* Category Column Styling (Left) */
+
 .category-cell {
   font-weight: 800;
   color: #ffffff;
@@ -321,7 +318,7 @@ import Footer from '@/components/Footer.vue';
   font-weight: 800;
 }
 
-/* Bottom Footnote Notes */
+
 .pricing-footnotes {
   display: flex;
   flex-direction: column;
@@ -351,9 +348,7 @@ import Footer from '@/components/Footer.vue';
   margin-top: 0.5rem;
 }
 
-/* ==========================================================================
-   RESPONSIVE STYLING (DESKTOP, TABLET, MOBILE)
-   ========================================================================== */
+
 @media (max-width: 768px) {
   .pricing-fees-section {
     padding: 3.5rem 1rem;

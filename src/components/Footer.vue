@@ -1,11 +1,11 @@
 <template>
     <div>
 
-<!-- FOOTER SECTION (Swychr Branded) -->
+
 <footer id="contact" class="swychpe-footer-section">
   <div class="footer-container">
     
-    <!-- Top Contact Banner -->
+
     <div class="footer-contact-banner">
       <div class="contact-text-col">
         <h2 class="contact-title">Have questions? We're here to help</h2>
@@ -24,10 +24,9 @@
       </div>
     </div>
 
-    <!-- Bottom Navigation & Legal Bar -->
     <div class="footer-bottom-bar">
       <div class="bottom-left">
-        <!-- Logo Badge -->
+    
         <router-link to="/" class="footer-logo-badge">
           <img src="@/assets/images/swychpe-logo.png" alt="SwychPe Logo" class="footer-logo-img" />
         </router-link>
@@ -35,7 +34,7 @@
         <span class="copyright-text">SwychPe All Rights Reserved 2026</span>
       </div>
 
-      <!-- Legal Links -->
+ 
       <nav class="legal-links">
         <a href="/about">About SwychPe</a>
         <a href="/term">Terms & Conditions</a>
@@ -43,7 +42,7 @@
         <a href="/disclaim">Disclaimer</a>
       </nav>
 
-      <!-- Social Icons -->
+
       <div class="social-icons-group">
         <a href="#facebook" aria-label="Facebook">
           <svg viewBox="0 0 24 24" fill="currentColor" class="social-icon"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
@@ -72,9 +71,6 @@
 
 <style scoped>
 
-/* ==========================================================================
-   FOOTER SECTION (Swychr Brand Purple Palette)
-   ========================================================================== */
 .swychpe-footer-section {
   width: 100%;
   background: linear-gradient(160deg, #1f072e 0%, #10021c 100%); /* Signature Swychr Deep Purple */
@@ -94,7 +90,6 @@
   gap: 4.5rem;
 }
 
-/* Contact Banner */
 .footer-contact-banner {
   display: flex;
   justify-content: space-between;
@@ -106,7 +101,7 @@
 .contact-title {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #E1BEE7; /* Signature Swychr Soft Lilac Highlight */
+  color: #E1BEE7; 
   margin-bottom: 0.8rem;
 }
 
@@ -122,7 +117,7 @@
   gap: 1rem;
 }
 
-/* Swychr Branded White/Purple Pill Buttons */
+
 .contact-pill-btn {
   background-color: #ffffff;
   color: #4A148C;
@@ -149,7 +144,6 @@
   font-size: 1.1rem;
 }
 
-/* Bottom Legal & Nav Bar */
 .footer-bottom-bar {
   display: flex;
   justify-content: space-between;
@@ -222,9 +216,7 @@
   transform: translateY(-2px);
 }
 
-/* ==========================================================================
-   RESPONSIVE BREAKPOINTS (Desktop, Tablet, Mobile)
-   ========================================================================== */
+
 @media (max-width: 1024px) {
   .swychpe-footer-section {
     padding: 4rem 2rem 2.5rem 2rem;
