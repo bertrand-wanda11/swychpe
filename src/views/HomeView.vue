@@ -36,7 +36,7 @@
      
         <div class="section-left">
           <h2 class="section-title">
-            Get your multi-currency virtual card in seconds!
+            Get your USD virtual card in seconds!
           </h2>
           <p class="section-description">
             Your SwychPe multi-currency card enables seamless global transactions across multiple currencies without hidden fees or currency conversion surcharges.
@@ -392,7 +392,6 @@
 
   </div>
 </section>
-
 
 
 <section class="swychpe-privileges-section">

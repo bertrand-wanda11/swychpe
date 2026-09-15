@@ -13,10 +13,7 @@
       </div>
 
       <div class="contact-buttons-col">
-        <a href="tel:+237600000000" class="contact-pill-btn">
-          <span class="pill-icon">📞</span>
-          <span>+237 670126098</span>
-        </a>
+       
         <a href="mailto:support@swychr.com" class="contact-pill-btn">
           <span class="pill-icon">✉️</span>
           <span>support@swychpe.com</span>
